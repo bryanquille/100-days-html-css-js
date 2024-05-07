@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-3 - Age Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="age-box">
+            <h1 class="title-1">Age Calculator</h1>
+            <form id="age-calculator">
+                <label for="date-birth" class="label">Enter your date of birth:</label>
+                <input type="date" name="date-input" id="date-birth" class="input" value="" required>
+                <button type="submit" class="btn" id="calculate-btn">Calculate Age</button>
+            </form>
+            <p class="response" id="response">Response here</p>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
