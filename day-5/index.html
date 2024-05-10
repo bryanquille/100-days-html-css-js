@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>JS Day 5 - Dice Roll Simulator</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title-1">Dice Roll Simulator</h1>
+    </header>
+    <main class="main">
+        <div class="dice" id="dice">
+            <div class="dice-face front">
+                <div class="circle"></div>
+            </div>
+            <div class="dice-face back">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="dice-face left">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="dice-face right">
+                <div class="circle-top">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-bottom">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="dice-face top">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="dice-face bottom">
+                <div class="circle-top">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-middle">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-bottom">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <p class="instructions"><span class="material-icons">arrow_upward</span>Click the Dice<span class="material-icons">arrow_upward</span></p>
+        <p class="value" id="value">Results</p>
+    </main>
+    
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
