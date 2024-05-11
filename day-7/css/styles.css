@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Patrick Hand";
+    src: url("../assets/fonts/PatrickHand-Regular.ttf");
+}
+
+:root {
+    --color1: #2196F3;
+    --color2: #FF9800;
+    --color3: #FFFFFF;
+    --color4: #e5e5e5;
+    --color5: #393939;
+    --color6: #e63777;
+}
+
+body {
+    margin: 0;
+    letter-spacing: 1.5px;
+    font-family: "Patrick Hand", cursive;
+    background-color: var(--color1);
+    background: linear-gradient(#457fca, #5691c8);
+}
+
+td {
+    padding: 0.5rem;
+    border: 3px solid var(--color5);
+}
+
+.header {
+    width: 100%;
+    padding: 1rem;
+}
+
+.title-1, 
+.title-2 {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    gap: 2.5rem;
+}
+
+.elements-container {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.element-img {
+    width: 8rem;
+    border: 7px solid var(--color4);
+    border-radius: 50%;
+    outline-offset: 1px;
+    outline: 7px solid transparent; /*Change to transparent*/ 
+}
+
+.user-selected {
+    border-color: var(--color5);
+}
+
+.options,
+.btn {
+    cursor: pointer;
+}
+
+.cursor {
+    cursor: not-allowed;
+}
+
+.playing-game {
+    width: 100%;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.buttons {
+    gap: 2rem;
+}
+
+.btn {
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+    display: block;
+    border-width: 3px;
+    border-color: var(--color3);
+    border-radius: 15px;
+    font-family: "Patrick Hand", cursive;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: var(--color4);
+}
+
+.play-btn {
+    border-color: var(--color2);
+    background-color: var(--color2);
+}
+
+.results {
+    width: 80%;
+    max-width: 350px;
+    border-collapse: collapse;
+}
+
+.item-cell {
+    width: 50%;
+}
+
+.score-cell {
+    width: 50%;
+}
+
+.rules {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #eeeeeedd;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(130vh);
+    transition: opacity 2s, transform 1s;
+}
+
+.show-rules {
+    opacity: 1;
+    pointer-events: unset;
+    transform: translateY(0);
+    transition: opacity 1s, transform 1s;
+}
+
+.rules-container {
+    width: 80%;
+    max-width: 320px;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #303a52;
+    color: var(--color3);
+}
+
+.rules-img {
+    width: 80%;
+}
+
+.rules-list {
+    font-size: 1.2rem;
+    letter-spacing: 0.8px;
+}

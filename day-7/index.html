@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/087dfb62b8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>JS Day 7 - Rock - Paper - Scissors - Lizard - Spock</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title-1">Rock - Paper - Scissors - Lizard - Spock</h1>
+      <button type="button" id="who-beats" class="view-rules btn">
+        Who Beats?
+      </button>
+    </header>
+    <main class="main">
+      <div class="game flex-column">
+        <article class="elements-article">
+          <h2 class="title-2 instructions"><i class="fa-solid fa-angles-down"></i> Select an option, then click "Play" <i class="fa-solid fa-angles-down"></i></h2>
+          <div class="elements-container flex-row">
+            <img
+              src="assets/images/rock.webp"
+              alt="a rock made with a hand"
+              class="element-img options"
+              id="rock"
+            />
+            <img
+              src="assets/images/paper.webp"
+              alt="a paper made with a hand"
+              class="element-img options"
+              id="paper"
+            />
+            <img
+              src="assets/images/scissors.webp"
+              alt="scissors made with a hand"
+              class="element-img options"
+              id="scissors"
+            />
+            <img
+              src="assets/images/lizard.webp"
+              alt="a lizard made with a hand"
+              class="element-img options"
+              id="lizard"
+            />
+            <img
+              src="assets/images/spock.webp"
+              alt="Spock made with a hand"
+              class="element-img options"
+              id="spock"
+            />
+          </div>
+        </article>
+        <div class="playing-game flex-column">
+            <div class="buttons flex-row">
+                <button type="button" class="btn play-btn" id="play-btn">Play</button>
+                <button type="button" class="btn reset-btn" id="reset-btn">Reset</button>
+            </div>
+            <table class="results" id="results">
+                <thead>
+                    <tr>
+                        <td>Item</td>
+                        <td>Score</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="item-cell"># Games:</td>
+                        <td class="score-cell" id="played-games">0</td>
+                    </tr>
+                    <tr>
+                        <td class="item-cell">Computer:</td>
+                        <td class="score-cell" id="computer-scores">0</td>
+                    </tr>
+                    <tr>
+                        <td class="item-cell">User:</td>
+                        <td class="score-cell" id="user-scores">0</td>
+                    </tr>
+                    <tr>
+                        <td class="item-cell">Ties:</td>
+                        <td class="score-cell" id="ties">0</td>
+                    </tr>
+                    <tr>
+                        <td class="item-cell">Winner:</td>
+                        <td class="score-cell" id="winner">----</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </main>
+    <div class="rules" id="rules">
+      <div class="rules-container">
+        <img
+          src="assets/images/rules.webp"
+          alt="rules image"
+          class="rules-img"
+        />
+        <ul class="rules-list">
+          <li><strong>Rock:</strong> Crushes Lizard.</li>
+          <li><strong>Paper:</strong> Covers Rock.</li>
+          <li><strong>Scissors:</strong> Cut Paper.</li>
+          <li><strong>Lizard:</strong> Poisons Spock.</li>
+          <li><strong>Spock:</strong> Smashes Scissors.</li>
+          <li><strong>Scissors:</strong> Decapitates Lizard.</li>
+          <li><strong>Lizard:</strong> Eats Paper.</li>
+          <li><strong>Paper:</strong> Disproves Spock.</li>
+          <li><strong>Spock:</strong> Vaporizes Rock.</li>
+          <li><strong>Rock:</strong> Crushes Scissors.</li>
+        </ul>
+        <button type="button" class="btn" id="close-rules">Close</button>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
