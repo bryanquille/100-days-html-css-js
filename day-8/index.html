@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>HTML-CSS-JS Day-8 Simple-Stopwatch</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title-1">Simple Stopwatch</h1>
+    </header>
+    <main class="main">
+      <p class="stop-watcher" id="stop-watcher">
+        <span class="hours" id="hours">00</span>:<span class="minutes" id="minutes">00</span>:<span class="seconds" id="seconds">00</span>.<span class="miliseconds" id="miliseconds">00</span>
+      </p>
+      <div class="buttons">
+        <button type="button" class="btn start-btn" id="start-btn">
+          Start
+        </button>
+        <button type="button" class="btn stop-btn" id="stop-btn">Stop</button>
+        <button type="button" class="btn reset-btn" id="reset-btn">
+          Reset
+        </button>
+      </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
