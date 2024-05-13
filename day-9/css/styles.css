@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    font-family: "Schibsted Grotesk", sans-serif;
+    background: linear-gradient(135deg, #f7ff00, #db36a4);
+}
+
+.main {
+    width: 80%;
+    max-width: 420px;
+    padding: 1.2rem;
+    border-radius: 20px;
+    background-color: #ffffff44;
+    box-shadow: 3px 3px 10px #444444bb;
+}
+
+.title-1 {
+    font-size: 1.8rem;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-input {
+    width: 50%;
+    padding: 5px;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .title-1 {
+        font-size: 2rem;
+    }
+    
+    .input-container, 
+    .user-input,
+    .text {
+        font-size: 1.2rem;
+    }
+}
