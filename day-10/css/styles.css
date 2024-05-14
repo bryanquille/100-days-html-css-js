@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    font-family: "Chelsea Market", system-ui;
+    background-color: #d8d8d8;
+}
+
+.main {
+    max-width: 700px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-1 {
+    letter-spacing: 5px;
+    word-spacing: 12px;
+}
+
+.title-1,
+.movie-description {
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 0.5rem 1.5rem;
+    display: block;
+    border-width: 5px;
+    border-color: #4997FD;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Chelsea Market", system-ui;
+    background-color: #4997FD;
+    color: #000000;
+}
+
+.img {
+    width: 100%;
+    box-shadow: 5px -5px 10px #000000;
+}
+
+.popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: grid;
+    place-items: center;
+    background-color: #000000aa;
+    backdrop-filter: blur(10px);
+    transition: opacity 0.3s, visibility 0.3s, transform 0.8s;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100vh);
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.close-popup {
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar,
+.bottom-bar {
+    width: 3rem;
+    height: 8px;
+    display: block;
+    border-radius: 5px;
+    background-color: #d8d8d8;
+}
+
+.top-bar {
+    transform: rotate(45deg);
+}
+
+.bottom-bar {
+    margin-top: -8px;
+    transform: rotate(-45deg);
+}
+
+.video {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px #d8d8d8;
+}

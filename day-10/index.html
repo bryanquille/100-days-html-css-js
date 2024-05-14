@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-10 Video-Trailer-Popup</title>
+</head>
+<body>
+    <main class="main">
+        <article>
+            <h1 class="title-1">Wild Life</h1>
+            <p class="movie-description">Discover the wonders of wildlife with 'El Wild Life.' This video takes you on an exciting journey through various habitats, highlighting the beauty and diversity of animal life. Explore unique behaviors, stunning visuals, and the importance of conservation in preserving our planet's rich ecosystems.</p>
+            <button type="button" class="btn" id="open-popup-btn">Watch movie</button>
+        </article>
+        <img src="assets/lens.jpg" alt="A lens of a camera" class="img" loading="lazy">
+        <div class="popup hidden" id="popup">
+            <div class="close-popup" id="close-popup">
+                <span class="top-bar"></span>
+                <span class="bottom-bar"></span>
+            </div>
+            <video src="assets/bear-movie.mp4" controls muted class="video" loading="lazy"></video>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
