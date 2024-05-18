@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>HTML-CSS-JS Day-14 Step-Progress-Bar</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="steps">
+          <span class="step" id="1">
+            <span class="circle reached">
+              <span class="material-icons">done</span>
+            </span>
+            <span class="step-text reached-text">Start</span>
+          </span>
+          <span class="step" id="2">
+            <span class="circle">
+                <span class="material-icons">clear</span>
+            </span>
+            <span class="step-text"></span>
+          </span>
+          <span class="step" id="3">
+            <span class="circle">
+                <span class="material-icons">clear</span>
+            </span>
+            <span class="step-text"></span>
+          </span>
+          <span class="step" id="4">
+            <span class="circle">
+                <span class="material-icons">clear</span>
+            </span>
+            <span class="step-text"></span>
+          </span>
+          <span class="step" id="5">
+            <span class="circle">
+                <span class="material-icons">clear</span>
+            </span>
+            <span class="step-text"></span>
+          </span>
+          <div class="progress-bar">
+            <div class="indicator"></div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button type="button" class="btn left disabled" id="left" disabled>
+            <span class="material-icons">arrow_back</span>
+          </button>
+          <button type="button" class="btn right" id="right">
+            <span class="material-icons">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
