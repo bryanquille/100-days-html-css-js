@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #40514e;
+    --color2: #2f89fc;
+    --color3: #30e3ca;
+    --color4: #f5f5f5;
+    --color5: #333333;
+    --color6: #30e3ca77;
+}
+
+body {
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: var(--color1);
+    color: var(--color5);
+}
+
+.header {
+    padding: 0.5rem 1rem;
+    background-color: var(--color3);
+    box-shadow: 0 1.5px 5px var(--color4);
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-name {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 0.6px;
+}
+
+.hamb-menu {
+    cursor: pointer;
+    width: 2.2rem;
+    height: 2.2rem;
+    fill: var(--color5);
+}
+
+.hamb-menu:hover {
+    fill: var(--color4);
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    background-color: var(--color6);
+    box-shadow: 1.5px 0 5px var(--color4);
+    backdrop-filter: blur(10px);
+    transition: opacity 1.2s, visibility 1.2s, transform 0.6s;
+}
+
+.hidden {
+    transform: translate(-110%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.visible {
+    transform: translate(0%);
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar .logo-name {
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 0.8rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    fill: var(--color4);
+}
+
+.navlist {
+    height: 80%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navitem {
+    cursor: pointer;
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: padding 0.3s;
+}
+
+.navitem:hover {
+    padding-left: 2.5rem;
+    background-color: var(--color2);
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar {
+        max-width: 400px;
+    }
+}
