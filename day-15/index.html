@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-15 Social-Media-Selector-Menu</title>
+</head>
+<body class="grid-center">
+    <div class="selected-container glass-effect" id="selected-container">
+        <span id="selected" class="selected">Social Media</span>
+        <img src="assets/arrows/arrow_drop_down_24dp.svg" alt="Arrow" class="arrow" id="arrow">
+    </div>
+    <ul class="sm-selector flex-column glass-effect hidden" id="social-media">
+        <li class="sm-item" id="facebook">
+            <img src="assets/social-media/facebook.svg" alt="Facebook logo" class="facebook"> Facebook
+        </li>
+        <li class="sm-item" id="youtube">
+            <img src="assets/social-media/youtube.svg" alt="YouTube logo" class="youtube"> YouTube
+        </li>
+        <li class="sm-item" id="x">
+            <img src="assets/social-media/x.svg" alt="X logo" class="x"> X
+        </li>
+        <li class="sm-item" id="linkedin">
+            <img src="assets/social-media/linkedin.svg" alt="LinkedIn logo" class="linkedin"> LinkedIn
+        </li>
+    </ul>
+    
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
