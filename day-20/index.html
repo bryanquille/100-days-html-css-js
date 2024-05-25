@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-20 Password-Generator</title>
+</head>
+<body>
+    <section class="section flex-column">
+        <h1 class="title-1">Password Generator</h1>
+        <p class="generated-password-box">
+            <span class="generated-password placeholder" id="generated-password">Create Password</span>
+            <span class="material-icons copy" id="copy-btn">content_copy</span>
+        </p>
+        <button type="button" class="btn" id="generate-password-btn">Generate</button>
+    </section>
+    <p class="modal copy-notification hidden" id="copy-notification">Password Copied!</p>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
