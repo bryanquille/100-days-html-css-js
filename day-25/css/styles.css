@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #FA7070;
+    --color2: #FEFDED;
+    --color3: #C6EBC5;
+    --color4: #A1C398;
+    --color6: #5d5d5d;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1.5rem;
+    display: grid;
+    place-items: center;
+    font-family: "Be Vietnam Pro", sans-serif;
+    background-color: var(--color1);
+}
+
+.gallery-app {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: var(--color2);
+    box-shadow: 0 0 5px 2px var(--color6);
+}
+
+.title-1 {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.get-photos {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input {
+    padding: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 0.5rem 1.2rem;
+    border-width: 2px;
+    border-color: var(--color4);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--color4);
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.image {
+    width: 280px;
+    height: 280px;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: -1.5px -1.5px 2px var(--color6);
+}
+
+.btn:hover {
+    border-color: var(--color3);
+    background-color: var(--color3);
+}
