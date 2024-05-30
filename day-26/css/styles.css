@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #83A2FF;
+    --color2: #B4BDFF;
+    --color3: #FFE3BB;
+    --color4: #FFD28F;
+    --color5: #040404;
+    --glass: #B4BDFFAA;
+}
+
+body {
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: var(--color1);
+}
+
+h1,
+p {
+    margin: 0;
+    text-align: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.title-1 {
+    margin-bottom: 1rem;
+}
+
+.instructions {
+    font-size: 1.2rem;
+}
+
+.notes {
+    width: 100%;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.note-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.note,
+.btn {
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--glass);
+    backdrop-filter: blur(10px);
+    box-shadow: -1.5px -1.5px 3px var(--color2);
+}
+
+.note {
+    padding: 0.7rem;
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    resize: none;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.trash-can:hover {
+    fill: var(--color5);
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.modal-confirmation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--color4);
+    box-shadow: 0 2px 2px 2px var(--color1), 0 0 0 100vmax var(--glass);
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.title-2 {
+    text-align: center;
+}
+
+.buttons-container {
+    gap: 2rem;
+}
+
+.confirm-btn {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-color: var(--color2);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--color2);
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        padding-top: 2rem;
+    }
+
+    .note-container {
+        width: 250px;
+        height: 180px;
+    }
+
+    .note,
+    .btn {
+        width: 250px;
+        height: 180px;
+        border-radius: 12px;
+    }
+    
+    .note {
+        padding-top: 2.2rem;
+        font-size: 1.2rem;
+    }
+
+    .delete-btn {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+
+    .trash-can {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .btn {
+        font-size: 2.5rem;
+    }
+}
+
+.note:hover {
+    box-shadow: 0 0 3px 3px var(--color2);
+}
+
+.note:focus-visible {
+    outline: none;
+    box-shadow: 0 0 3px 3px var(--color2);
+}
+
+.btn:hover {
+    background-color: var(--color2);
+}
+
+.btn:active {
+    box-shadow: 1.5px 1.5px 2px var(--color2);
+}
+
+.confirm-btn:hover {
+    background-color: var(--color1);
+}

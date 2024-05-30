@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-26 Note-Taking-App</title>
+</head>
+<body class="flex-column">
+    <header class="header">
+        <h1 class="title-1">Note App</h1>
+        <p class="instructions">Click outside the note to save it.</p>
+    </header>
+    <section class="notes flex-row" id="notes">
+        <button type="button" class="btn" id="add-btn">+</button>
+    </section>
+    <section class="modal-confirmation flex-column hidden" id="confirm-box">
+        <h2 class="title-2">Are you sure to remove the note?</h2>
+        <div class="buttons-container flex-row">
+            <button type="button" class="confirm-btn" id="yes-btn">Yes</button>
+            <button type="button" class="confirm-btn" id="no-btn">No</button>
+        </div>
+    </section>
+    
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
