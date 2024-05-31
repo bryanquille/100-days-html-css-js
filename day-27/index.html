@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-27 Navbar-Menu</title>
+</head>
+<body>
+    <header class="header flex-row">
+        <div class="logo-container flex-row">
+            <img src="assets/ghost-2.svg" alt="Ghost logo" class="logo-image">
+            <P class="logo-text">Ghost</P>
+        </div>
+        <button type="button" class="hamburguer-menu flex-column" id="hamb-btn">
+            <span class="bar" id="top-bar"></span>
+            <span class="bar" id="middle-bar"></span>
+            <span class="bar" id="bottom-bar"></span>
+        </button>
+        <nav class="navbar hidden" id="navbar">
+            <ul class="navlist flex-column">
+                <li><a href="#" class="navlink">Home</a></li>
+                <li><a href="#" class="navlink">Services</a></li>
+                <li><a href="#" class="navlink">Products</a></li>
+                <li><a href="#" class="navlink">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <img src="assets/ghost-filled.svg" alt="Ghost image" class="image">
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
