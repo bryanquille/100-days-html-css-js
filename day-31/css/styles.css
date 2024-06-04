@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --color1: #3C486B;
+    --color2: #F0F0F0;
+    --color3: #F9D949;
+    --color4: #F45050;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    font-family: "Wix Madefor Display", sans-serif;
+    background-color: var(--color1);
+}
+
+.calender-container {
+    width: 90%;
+    max-width: 320px;
+    border-radius: 15px;
+    background-color: var(--color2);
+    box-shadow: 0 1px 3px var(--color2);
+}
+
+.header {
+    padding: 1rem;
+    border-radius: 15px 15px 0 0;
+    background-color: var(--color3);
+}
+
+.title-1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: cursive;
+}
+
+.main {
+    padding: 1rem;
+}
+
+.weekday-text,
+.day-number-text,
+.year-text {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.weekday-text,
+.year-text {
+    font-size: 1.2rem;
+    color: var(--color1);
+}
+
+.day-number-text {
+    font-size: 7rem;
+    font-weight: 700;
+    font-family: cursive;
+    color: var(--color4);
+}
