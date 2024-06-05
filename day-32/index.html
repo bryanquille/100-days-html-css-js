@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap" rel="stylesheet"/>
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-32 Loan-Calculator</title>
+  </head>
+  <body>
+    <section class="container">
+        <h1 class="title-1">Loan Calculator</h1>
+        <form class="loan-calculator" id="loan-calculator">
+            <label for="loan-amount" class="label">Loan amount ($):</label>
+            <input type="number" name="loan-amount" id="loan-amount" class="input" value="" required>
+            <label for="interest-rate" class="label">Interest rate (%):</label>
+            <input type="number" name="interest-rate" id="interest-rate" class="input" value="" required>
+            <label for="months-to-pay" class="label">Months to pay:</label>
+            <input type="number" name="months-to-pay" id="months-to-pay" class="input" value="" required>
+            <button type="submit" class="btn" id="calculate-btn">Calculate</button>
+        </form>
+        <p class="response">Monthly Payment: <span id="monthly-payment" class="monthly-payment"></span></p>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
