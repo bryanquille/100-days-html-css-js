@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/output.css">
+    <title>HTML-CSS-JS Day-34 Notifications-App</title>
+</head>
+<body class="grid place-items-center font-quicksand bg-slate-50 lg:py-8 lg:bg-slate-300">
+    <section class="notifications-section">
+        <div class="mb-6 flex justify-between">
+            <h3 class="text-xl font-bold">Notifications <span class="w-8 inline-block rounded-lg text-center bg-blue-800 text-slate-100" id="unread-notifications-number">3</span></h3>
+            <button class="hover:text-blue-700" type="button" id="mark-as-read-btn">Mark all as read</button>
+        </div>
+        
+        <div class="notification-container unread-notification">
+            <img src="./assets/images/mark-webber-avatar.png" alt="Mark Webber avatar" class="avatar-img">
+            <div class="content-container">
+                <p class="notification-content">
+                    <span class="user-name">Mark Webber</span> reacted to your recented post <span class="post-reference">My first tournament today!</span> <span class="unread">🔴</span>
+                </p>
+                <span class="notification-time">
+                    1 min ago
+                </span>
+            </div>
+        </div>
+        
+        <div class="notification-container unread-notification">
+            <img src="./assets/images/angela-gray-avatar.png" alt="Angela Gray avatar" class="avatar-img">
+            <div class="content-container">
+                <p class="notification-content">
+                    <span class="user-name">Angela Gray</span> followed you <span class="unread">🔴</span>
+                </p>
+                <span class="notification-time">
+                    5 min ago
+                </span>
+            </div>
+        </div>
+        
+        <div class="notification-container unread-notification">
+            <img src="./assets/images/jacob-tompson-avatar.png" alt="Jacob Tompson avatar" class="avatar-img">
+            <div class="content-container">
+                <p class="notification-content">    
+                    <span class="user-name">Jacob Tompson</span> has joined your group <span class="post-reference text-blue-700">Chess Club</span> <span class="unread">🔴</span>
+                </p>
+                <span class="notification-time">
+                    1 day ago
+                </span>
+            </div>
+        </div>
+        
+        <div class="notification-container">
+            <img src="./assets/images/rizky-hasanuddin-avatar.png" alt="Rizky Hasanuddin avatar" class="avatar-img">
+            <div class="content-container">
+                <p class="notification-content">
+                    <span class="user-name">Rizky Hasanuddin</span> sent you a private message
+                </p>
+                <span class="notification-time">
+                    5 days ago
+                </span>
+                <p class="mt-2 p-2 border-2 border-slate-400 rounded-md">
+                    Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and now I'm already having a lots of fun and improving my game
+                </p>
+            </div>
+        </div>
+        
+        <div class="notification-container">
+            <img src="./assets/images/kimberly-smith-avatar.png" alt="Kimberly Smith" class="avatar-img">
+            <div class="content-container">
+                <p class="notification-content">
+                    <span class="user-name">Kimberly Smith</span> commented on your picture
+                </p>
+                <span class="notification-time">
+                    1 week ago
+                </span>
+            </div>
+            <img src="./assets/images/angel-evil.png" alt="Angel vs Evil playing chess" class="w-16 ml-auto">
+        </div>
+        
+        <div class="notification-container">
+            <img src="./assets/images/nathan-peterson-avatar.png" alt="Nathan Peterson avatar" class="avatar-img">
+            <div class="content-container">
+                <p class="notification-content">
+                    <span class="user-name">Nathan Peterson</span> reacted to your recent post <span class="post-reference">5 end-game strategies to increase your win rate</span>
+                </p>
+                <span class="notification-time">
+                    2weeks ago
+                </span>
+            </div>
+        </div>
+        
+        <div class="notification-container">
+            <img src="./assets/images/anna-kim-avatar.png" alt="Anna Kim" class="avatar-img">
+            <div class="content-container">
+                <p class="notification-content">
+                    <span class="user-name">Anna Kim</span> left the group <span class="post-reference text-blue-700">Chess Club</span>
+                </p>
+                <span class="notification-time">
+                    2 weeks ago
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
