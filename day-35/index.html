@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>HTML-CSS-JS Day-35 Image-Slider</title>
+  </head>
+  <body>
+    <div class="slider-container">
+        <button type="button" class="btn btn-back" id="back-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+        </button>
+        <button type="button" class="btn btn-forward" id="forward-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+        </button>
+      <div class="image-container">
+        <img
+          srcset="
+            ./assets/images/desktop/corner-cafe_1280.webp,
+            ./assets/images/mobile/corner-cafe_640.webp 2x
+          "
+          alt="A corner Cafe"
+          class="image"
+          loading="lazy"
+        />
+        <img
+          srcset="
+            ./assets/images/desktop/corner-bar_1280.webp,
+            ./assets/images/mobile/corner-bar_640.webp 2x
+          "
+          alt="A corner bar in Dublin"
+          class="image"
+          loading="lazy"
+        />
+        <img
+          srcset="
+            ./assets/images/desktop/doors-in-dublin_1280.webp,
+            ./assets/images/mobile/doors-in-dublin_640.webp 2x
+          "
+          alt="Doors in Dublin"
+          class="image"
+          loading="lazy"
+        />
+        <img
+          srcset="
+            ./assets/images/desktop/garden-door_1280.webp,
+            ./assets/images/mobile/garden-door_640.webp 2x
+          "
+          alt="A garden over a door"
+          class="image"
+          loading="lazy"
+        />
+        <img
+          srcset="
+            ./assets/images/desktop/people-walking_1280.webp,
+            ./assets/images/mobile/people-walking_640.webp 2x
+          "
+          alt="People walking"
+          class="image"
+          loading="lazy"
+        />
+        <img
+          srcset="
+            ./assets/images/desktop/inside-a-bar_1280.webp,
+            ./assets/images/mobile/inside-a-bar_640.webp 2x
+          "
+          alt="A photo inside a bar"
+          class="image"
+          loading="lazy"
+        />
+        <img
+          srcset="
+            ./assets/images/desktop/lamps-at-door_1280.webp,
+            ./assets/images/mobile/lamps-at-door_640.webp 2x
+          "
+          alt="Lamps over doors"
+          class="image"
+          loading="lazy"
+        />
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
