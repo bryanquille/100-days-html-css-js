@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    background-color: #171332;
+}
+
+.star-span {
+    position: absolute;
+}
+
+.star {
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    animation: goup ease-in-out 5s;
+}
+
+@keyframes goup {
+    0% {
+        transform: translateY(-50%);
+    }
+
+    15% {
+        fill: #2a5d67;
+    }
+
+    20% {
+        fill: #eeeeee;
+    }
+
+    30% {
+        fill: #4ae3b5;
+    }
+
+    100% {
+        transform: translateY(-5000%);
+    }
+}
