@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-38 Feedback-UI</title>
+</head>
+<body>
+    <section class="container visible" id="feedback-container">
+        <h1 class="title-1">Feedback UI</h1>
+        <div class="emojis-container">
+            <button type="button" class="status">
+                <img src="./assets/unhappy.svg" alt="Unhappy emoji" class="emoji-img">
+                <span class="status-text">Unhappy</span>
+            </button>
+            <button type="button" class="status">
+                <img src="./assets/neutral.svg" alt="Neutral emoji" class="emoji-img">
+                <span class="status-text">Neutral</span>
+            </button>
+            <button type="button" class="status">
+                <img src="./assets/satisfied.svg" alt="Satisfied emoji" class="emoji-img">
+                <span class="status-text">Satisfied</span>
+            </button>
+        </div>
+        <button type="button" class="btn" id="send-btn">Send Review</button>
+    </section>
+    
+    <section class="modal hidden" id="modal-box">
+        <h2 class="title-2">Thank You!</h2>
+        <p class="feedback-text">Feedback: <span id="status-selection"></span></p>
+        <p class="text">We'll use your feedback to improve our customer support.</p>
+    </section>
+    
+    <!-- JavaScript -->
+     <script src="js/script.js"></script>
+</body>
+</html>
