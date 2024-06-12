@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>HTML-CSS-JS Day-39 English-Dictionary</title>
+</head>
+<body>
+  <section class="english-dictionary">
+    <h1 class="title-1">English Dictionary</h1>
+    <form class="form" id="form">
+        <input type="text" name="word" id="input-word" class="input-word" value="">
+    </form>
+    <p class="instructions text visible" id="instructions">Type a word and press 'Enter'</p>
+    <p class="word-title text hidden" id="word-title-container">Word title: <span id="world-title"></span></p>
+    <p class="meaning text hidden" id="meaning-container">Meaning: <span id="meaning"></span></p>
+    <audio controls class="audio hidden" id="audio-element"></audio>
+  </section>
+  
+  <!-- JavaScript -->
+   <script src="js/script.js"></script>
+</body>
+</html>
