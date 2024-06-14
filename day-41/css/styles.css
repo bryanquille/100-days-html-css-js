@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #E88D67;
+    --color2: #F3F7EC;
+    --color3: #006989;
+    --color4: #005C78;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    font-family: "Inter", sans-serif;
+    background-color: var(--color1);
+}
+
+.container {
+    width: 90%;
+    padding: 1rem;
+}
+
+.title-1 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color2);
+}
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.button-box {
+    width: 70%;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn {
+    cursor: pointer;
+    width: 200px;
+    height: 120px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    background-color: var(--color3);
+    color: var(--color4);
+    box-shadow: 1px 1px 5px var(--color4);
+}
+
+.instruction {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #F3F7EC88;
+}
+
+.btn:hover {
+    color: var(--color1);
+}
+
+#crash-btn {
+    background: url(../assets/images/crash.png) no-repeat;
+    background-size: cover;
+}
+
+#kick-btn {
+    background: url(../assets/images/kick.png) no-repeat;
+    background-size: cover;
+}
+
+#snare-btn {
+    background: url(../assets/images/snare.png) no-repeat;
+    background-size: cover;
+}
+
+#tom-btn {
+    background: url(../assets/images/tom.png) no-repeat;
+    background-size: cover;
+}
