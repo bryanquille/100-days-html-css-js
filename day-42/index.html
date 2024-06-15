@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/output.css" />
+    <title>HTML-CSS-JS Day-42 Intro-Section-With-Dropdown-Navigation</title>
+  </head>
+  <body class="bg-slate-100">
+    <header
+      class="fixed top-0 left-0 w-full px-4 py-2 flex justify-between items-center bg-[rgb(241, 245, 249, 0.8)] backdrop-blur-lg md:px-8 md:py-4 xl:px-16"
+    >
+      <a href="#" class="font-kanit font-extrabold text-4xl lg:text-5xl">snap</a>
+      <button
+        type="button"
+        class="relative z-10 cursor-pointer w-9 h-[25px] flex flex-col justify-center items-center gap-1 bg-transparent lg:hidden"
+        id="menu-btn"
+      >
+        <span class="bars" id="top-bar"></span>
+        <span class="bars" id="middle-bar"></span>
+        <span class="bars" id="bottom-bar"></span>
+      </button>
+      <nav
+        class="absolute top-0 right-0 w-3/4 max-w-80 h-full min-h-screen px-6 pt-10 pb-20 flex flex-col justify-between items-center gap-4 bg-slate-100 shadow-darkScreen transition-all duration-300 hidden-menu md:max-w-96 lg:visible-menu lg:relative lg:top-[unset] lg:right-[unset] lg:w-full lg:max-w-[unset] lg:h-auto lg:min-h-fit lg:ml-8 lg:flex-row lg:justify-start lg:shadow-none lg:p-0 lg:bg-transparent xl:ml-16"
+        id="navbar"
+      >
+        <ul class="pt-6 flex flex-col gap-4 self-start lg:p-0 lg:flex-row lg:self-center lg:gap-11 xl:gap-14">
+          <li class="lg:relative">
+            <button type="button" class="icon-text w-3/4 max-w-72" id="features-btn">
+              <span>Features</span>
+              <span class="material-icons">arrow_drop_down</span>
+            </button>
+            <ul class="submenu hidden-submenu" id="features-submenu">
+              <li class="icon-text-submenu close-menu">
+                <span class="material-icons text-violet-600">calendar_month</span>
+                <span>Todo List</span>
+              </li>
+              <li class="icon-text-submenu close-menu">
+                <span class="material-icons text-green-600">event</span>
+                <span>Calender</span>
+              </li>
+              <li class="icon-text-submenu close-menu">
+                <span class="material-icons text-yellow-500">notifications</span>
+                <span>Reminders</span>
+              </li>
+              <li class="icon-text-submenu close-menu">
+                <span class="material-icons text-violet-500">schedule</span>
+                <span>Planning</span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button type="button" class="icon-text" id="company-btn">
+              <span>Company</span>
+              <span class="material-icons">arrow_drop_down</span>
+            </button>
+            <ul class="submenu hidden-submenu" id="company-submenu">
+              <li class="mb-3 close-menu">History</li>
+              <li class="mb-3 close-menu">Our Team</li>
+              <li class="mb-3 close-menu">Blog</li>
+            </ul>
+          </li>
+          <li class="close-menu">Careers</li>
+          <li class="close-menu">About</li>
+        </ul>
+        <div class="flex flex-col gap-5 lg:ml-auto lg:flex-row lg:gap-7 xl:gap-11">
+          <button type="button" class="text-xl text-slate-600 close-menu hover:text-black">Login</button>
+          <button type="button" class="cursor-pointer px-4 py-2 text-xl text-center border-2 border-slate-950 rounded-3xl close-menu hover:border-slate-500 hover:bg-slate-50">Register</button>
+        </div>
+      </nav>
+    </header>
+    <main class="py-16 px-4 flex flex-col justify-center items-center md:px-8 md:pt-28 md:pb-4 lg:w-full lg:pt-32 lg:block xl:px-32">
+      <div class="flex flex-col-reverse lg:w-full lg:flex-row lg:gap-8">
+        <h1 class="w-full my-4 text-center text-4xl font-bold md:text-5xl lg:w-1/2 lg:text-7xl lg:text-left">Make Remote work</h1>
+        <img
+          src="./assets/images/Collaborate.svg"
+          alt="A illustration of people collaborating on a work"
+          class="w-full max-w-96 md:max-w-[500px] lg:w-1/2 lg:max-w-[450px] lg:mx-auto xl:max-w-[600px]"
+        />
+      </div>
+      <p class="mb-5 text-center text-lg md:max-w-[650px] md:mb-7 md:text-2xl lg:max-w-[480px] lg:-mt-40 lg:text-left xl:-mt-52 2xl:max-w-[650px] 2xl:-mt-80">
+        Get your team is sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+      </p>
+      <button type="button" class="mb-10 px-4 py-2 rounded-2xl font-medium text-lg text-slate-100 border-2 border-slate-700 bg-slate-950 hover:bg-slate-300 hover:text-slate-900 md:px-6 md:py-3 md:text-xl">Learn more</button>
+      <div class="w-full flex justify-between items-center md:max-w-[650px] lg:max-w-[480px] lg:text-left 2xl:max-w-[650px]">
+        <img src="./assets/images/databiz.svg" alt="databiz logo" class="sponsores" />
+        <img src="./assets/images/audio-phile.svg" alt="audio phile logo" class="sponsores" />
+        <img src="./assets/images/meet.svg" alt="meet logo" class="sponsores" />
+        <img src="./assets/images/maker.svg" alt="maker logo" class="sponsores" />
+      </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
