@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-46 Currency-Converter</title>
+</head>
+<body>
+    <section class="container">
+        <h1 class="title-1">Currency Converter</h1>
+        <form id="form">
+            <fieldset>
+                <legend>From:</legend>
+                <select name="from" id="from" class="select">
+                    <option value="AUD" selected>AUD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="INR">INR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="USD">USD</option>
+                </select>
+                <input type="number" class="input" id="from-value" value="1" required>
+            </fieldset>
+            <fieldset>
+                <legend>To:</legend>
+                <select name="from" id="to" class="select">
+                    <option value="AUD">AUD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="INR">INR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="USD" selected>USD</option>
+                </select>
+                <input type="number" class="input" id="to-value" readonly>
+            </fieldset>
+        </form>
+        <p class="result" id="result">Result</p>
+    </section>
+    
+    <!-- JavaScript -->
+     <script src="js/script.js"></script>
+</body>
+</html>

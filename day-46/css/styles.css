@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #3A98B9;
+    --color2: #FFF1DC;
+    --color3: #E8D5C4;
+    --color4: #EEEEEE;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    font-family: "Playwrite DE Grund", cursive;
+    background-color: var(--color1);
+    background: linear-gradient(#00B4DB, #0083B0);
+}
+
+fieldset {
+    width: 100%;
+    border: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: var(--color2);
+    box-shadow: 2px 2px 5px var(--color4);
+}
+
+.title-1 {
+    text-align: center;
+}
+
+.select,
+.input {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.select {
+    width: 30%;
+    background-color: var(--color4);
+}
+
+.input {
+    width: 60%;
+    background-color: var(--color3);
+}
+
+#from-value {
+    background-color: var(--color4);
+}
+
+.result {
+    text-align: center;
+    font-size: 1.2rem;
+}
