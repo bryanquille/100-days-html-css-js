@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.7)), url(https://cdn.pixabay.com/photo/2018/04/18/01/14/laptop-3329265_1280.jpg) center no-repeat;
+    background-size: cover;
+    color: #eeeeee;
+}
+
+.container {
+    z-index: 10;
+}
+
+.title-1 {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.btn {
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 0.5rem 1.5rem;
+    display: block;
+    border-width: 2px;
+    border-color: #a6a6a6;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #d6ef5b;
+}
+
+.btn:hover {
+    background-color: #93f160;
+}
+
+.blur-container {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    transition: all ease-in 0.6s;
+}
+
+.blur-effect {
+    z-index: 12;
+    backdrop-filter: blur(15px);
+}
+
+.modal {
+    position: fixed;
+    z-index: 15;
+    width: 90%;
+    max-width: 420px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #46d5da;
+    color: #444444;
+    transition: all ease-in 0.6s;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-250%);
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.title-2 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.material-icons {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.label,
+.input {
+    margin-bottom: 0.5rem;
+    padding: 5px;
+    font-size: 1.1rem;
+    display: block;
+}
+
+.input,
+.modal-btn {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.modal-btn:hover {
+    background-color: #478be5;
+    color: #eeeeee;
+}
+
+@media screen and (min-width: 768px) {
+    .title-1 {
+        font-size: 3.5rem;
+    }
+
+    .join-btn {
+        padding: 1rem 2rem;
+        border-radius: 25px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .title-1 {
+        font-size: 5rem;
+    }
+}

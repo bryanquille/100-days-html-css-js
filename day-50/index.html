@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-50 Blurred-Background-Popup</title>
+</head>
+<body>
+    <section class="container">
+        <h1 class="title-1">Welcome to our website</h1>
+        <button type="button" class="btn join-btn" id="join-btn">Click to Join</button>
+    </section>
+
+    <div class="blur-container"></div>
+
+    <section class="modal hidden" id="modal">
+        <h2 class="title-2">You're nice!</h2>
+        <button type="button" class="close-btn" id="close-btn">
+            <span class="material-icons">close</span>
+        </button>
+        <form class="form">
+            <label for="email" class="label">Enter your email:</label>
+            <input type="email" name="email" id="email" class="input">
+            <button type="button" class="btn modal-btn">Join</button>
+        </form>
+    </section>
+
+    <!-- JavaScript -->
+     <script src="js/script.js"></script>
+</body>
+</html>
