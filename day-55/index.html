@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>HTML-CSS-JS Day-55 Rotating-Image-Gallery</title>
+</head>
+<body>
+    <section class="banner">
+        <div class="slider" style="--quantity: 6">
+            <div class="item" style="--position: 1"><img src="assets/images/car-1.webp" alt="car 1 image" class="image"></div>
+            <div class="item" style="--position: 2"><img src="assets/images/car-2.webp" alt="car 2 image" class="image"></div>
+            <div class="item" style="--position: 3"><img src="assets/images/car-3.webp" alt="car 3 image" class="image"></div>
+            <div class="item" style="--position: 4"><img src="assets/images/car-4.webp" alt="car 4 image" class="image"></div>
+            <div class="item" style="--position: 5"><img src="assets/images/car-5.webp" alt="car 5 image" class="image"></div>
+            <div class="item" style="--position: 6"><img src="assets/images/car-6.webp" alt="car 6 image" class="image"></div>
+        </div>
+    </section>
+
+    <div class="buttons">
+        <button type="button" class="btn" id="before-btn">
+            <span class="material-icons">navigate_before</span>
+        </button>
+        <button type="button" class="btn" id="next-btn">
+            <span class="material-icons">navigate_next</span>
+        </button>
+    </div>
+
+    <!-- JavaScript -->
+     <script src="js/script.js"></script>
+</body>
+</html>
