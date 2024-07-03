@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #01204E;
+    --color2: #028391;
+    --color3: #F6DCAC;
+    --color4: #FEAE6F;
+    --color5: #f5f5f5;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    font-family: "Lato", sans-serif;
+    background-color: var(--color1);
+    color: var(--color5);
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+.title-1 {
+    margin: 0;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+.target-year {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    font-size: 5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 10px var(--color3);
+}
+
+.countdown {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background-color: var(--color2);
+}
+
+@media screen and (min-width: 768px) {
+    .title-1 {
+        font-size: 3rem;
+    }
+
+    .target-year {
+        font-size: 7rem;
+    }
+
+    .countdown {
+        font-size: 4rem;
+    }
+
+    .counter {
+        margin: 0;
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .countdown {
+        font-size: 5rem;
+    }
+}
