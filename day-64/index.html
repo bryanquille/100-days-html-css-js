@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-64 Arithmetic-Arranger</title>
+</head>
+<body>
+    <main class="main">
+        <section class="instructions">
+            <h1 class="title-1">Arithmetic Arranger</h1>
+            <p class="text">The Arithmetic Arranger app is an easy-to-use tool for organizing and solving arithmetic problems. It helps students with their math homework and teachers with classroom materials, making the process simpler and more visually appealing.</p>
+        </section>
+        <form class="form" id="form">
+            <h2 class="title-2">Arithmetic operation</h2>
+            <div class="operation-container">
+                <input type="text" class="operator" id="operator-1" value="" required>
+                <select name="operator" id="operator-sign" class="select">
+                    <option class="option" value="+" selected>➕</option>
+                    <option class="option" value="-">➖</option>
+                    <option class="option" value="*">✖️</option>
+                    <option class="option" value="/">➗</option>
+                </select>
+                <input type="text" class="operator" id="operator-2" value="" required>
+            </div>
+            <button type="submit" class="solve-btn" id="solve-btn">Solve</button>
+        </form>
+        <section class="solution hidden-answer" id="solution-container">
+            <h2 class="title-2">Solution</h2>
+            <p class="answer" id="answer"></p>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
