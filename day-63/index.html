@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/output.css" />
+
+    <title>HTML-CSS-JS Day-63 Mortgage-Calculator</title>
+  </head>
+  <body
+    class="w-full h-full min-h-screen grid place-items-center font-PlusJakartaSans bg-blue-300 text-slate-700 md:py-8"
+  >
+    <section
+      class="w-full h-fit bg-white md:max-w-[650px] md:rounded-2xl md:overflow-hidden md:shadow lg:h-auto lg:max-w-[1000px] lg:flex lg:justify-center lg:items-center lg:rounded-[50px] xl:max-w-[1200px]"
+    >
+      <article class="px-6 py-8 lg:w-1/2">
+        <h1
+          class="mb-1 font-bold text-2xl text-slate-700 lg:inline-block lg:w-3/4"
+        >
+          Mortgage Calculator
+        </h1>
+        <button
+          type="button"
+          class="mb-6 underline underline-offset-2 cursor-pointer text-slate-500 lg:inline-block lg:text-left"
+          id="clear-btn"
+        >
+          Clear All
+        </button>
+        <form id="form">
+          <label for="amount" class="labels">Mortgage Amount</label>
+          <div class="inputNumberContainer">
+            <span
+              class="amountInputSymbol left-0 border-l-slate-700 rounded-l-[4px] border-l-[1px]"
+              >$</span
+            >
+            <input
+              type="number"
+              name="amount"
+              id="amount"
+              class="inputsNumber pl-14"
+              value=""
+              required
+            />
+          </div>
+
+          <div
+            class="lg:w-full lg:flex lg:justify-between lg:items-center lg:gap-6"
+          >
+            <div class="lg:w-full">
+              <label for="term" class="labels">Mortgage Term</label>
+              <div class="inputNumberContainer">
+                <span class="years">years</span>
+                <input
+                  type="number"
+                  name="term"
+                  id="term"
+                  class="inputsNumber"
+                  value=""
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="lg:w-full">
+              <label for="interest" class="labels">Interest Rate</label>
+              <div class="inputNumberContainer">
+                <span class="percentage">%</span>
+                <input
+                  type="number"
+                  step="0.01"
+                  name="interest"
+                  id="interest"
+                  class="inputsNumber"
+                  value=""
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <p class="mb-2 text-xl">Mortgage Type</p>
+          <label for="repayment" class="labels radioLabel">
+            <input
+              type="radio"
+              name="type"
+              id="repayment"
+              class="inputsRadio"
+              value="repayment"
+              checked
+            />
+            Repayment
+          </label>
+          <label for="interest-only" class="labels radioLabel">
+            <input
+              type="radio"
+              name="type"
+              id="interest-only"
+              class="inputsRadio"
+              value="interest"
+            />
+            Interest Only
+          </label>
+
+          <button
+            type="submit"
+            class="cursor-pointer w-11/12 mx-auto my-8 p-4 block text-center text-xl rounded-full font-bold bg-lime-400 text-slate-900 hover:bg-lime-600"
+            id="calculate-btn"
+          >
+            <img
+              src="./assets/images/icon-calculator.svg"
+              alt="calculator icon"
+              class="inline-block align-top"
+            />
+            Calculate Repayments
+          </button>
+        </form>
+      </article>
+
+      <article
+        class="px-6 py-8 bg-slate-700 text-white lg:h-auto lg:w-1/2 lg:self-stretch lg:grid lg:place-items-center lg:rounded-bl-[100px]"
+        id="response-box"
+      >
+        <div class="visibleResults lg:px-10" id="empty-results">
+          <img
+            src="./assets/images/illustration-empty.svg"
+            alt="An illustration with paper, pen, calculator, bills"
+            class="block mx-auto mb-4"
+          />
+          <h2 class="mb-4 font-bold text-2xl text-center">
+            Results shown here
+          </h2>
+          <p class="text-center text-slate-300">
+            Complete the form and click “calculate repayments” to see what your
+            monthly repayments would be.
+          </p>
+        </div>
+        <div class="hiddenResults lg:px-10" id="completed-results">
+          <h2 class="mb-4 text-2xl font-bold text-white lg:text-3xl">
+            Your results
+          </h2>
+          <p class="mb-8 text-slate-300">
+            Your results are shown below based on the information you provided.
+            To adjust the results, edit the form and click “calculate
+            repayments” again.
+          </p>
+
+          <div
+            class="w-full p-5 border-t-4 border-t-lime-300 rounded-2xl bg-slate-800"
+          >
+            <h3 class="mb-2 font-bold text-xl text-slate-400">
+              Your monthly repayments
+            </h3>
+            <p
+              id="monthly-repayments"
+              class="mb-4 text-4xl font-bold text-lime-500 lg:text-5xl"
+            >
+              $ 00.00
+            </p>
+            <hr class="py-2" />
+            <h3 class="mb-2 font-bold text-xl text-slate-400">
+              Total you'll repay over the term
+            </h3>
+            <p
+              id="total-repay"
+              class="text-2xl font-medium text-white lg:text-3xl"
+            >
+              $ 00.00
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
