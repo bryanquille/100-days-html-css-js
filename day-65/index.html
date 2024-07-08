@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/output.css">
+
+    <title>HTML-CSS-JS Day-65 Contact-Form</title>
+</head>
+<body class="w-full h-full min-h-screen py-4 grid place-items-center font-Montserrat bg-green-200">
+    <section class="w-11/12 max-w-[400px] p-6 rounded-xl bg-slate-50 shadow-lg md:max-w-[500px] lg:max-w-[650px]">
+        <h1 class="mb-6 font-bold text-3xl text-slate-700">Contact Us</h1>
+        <form id="contact-form">
+            <div class="lg:flex lg:justify-between lg:items-center lg:gap-4">
+                <div class="w-full">
+                    <label for="first-name" class="label">First Name *</label>
+                    <input type="text" name="first-name" id="first-name" required value="" class="input-text">
+                </div>
+                
+                <div class="w-full">
+                    <label for="last-name" class="label">Last Name *</label>
+                    <input type="text" name="last-name" id="last-name" required value="" class="input-text">
+                </div>
+            </div>
+
+            <label for="email" class="label">Email Address *</label>
+            <input type="email" name="email" id="email" value="" required class="input-text mb-6">
+
+            <div class="mb-2">
+                <p class="mb-4 text-lg">Query Type *</p>
+                <div class="flex flex-col justify-stretch items-center lg:flex-row lg:gap-4">
+                    <label for="general" class="label w-full mb-4 p-3 border-2 border-slate-300 rounded-md">
+                        <input type="radio" name="query-type" id="general" value="general" required checked> General Enquiry
+                    </label>
+                    <label for="support" class="label w-full mb-4 p-3 border-2 border-slate-300 rounded-md">
+                        <input type="radio" name="query-type" id="support" value="support" required> Support Request
+                    </label>
+                </div>
+            </div>
+
+            <label for="message" class="label">Message *</label>
+            <textarea name="message" id="message" rows="5" required class="w-full mb-6 p-2 border-2 border-slate-300 rounded-md"></textarea>
+
+            <div class="mb-6 flex justify-start items-baseline gap-4">
+                <input type="checkbox" name="consent" id="consent" required class="align-middle"> 
+                <label for="consent">
+                    I consent to being contacted by the team <span class="text-green-700">*</span>
+                </label>
+            </div>
+
+            <button type="submit" id="submit-btn" class="cursor-pointer w-full p-2 rounded-md font-semibold text-lg bg-green-700 text-slate-50 hover:bg-green-500">Submit</button>
+        </form>
+    </section>
+
+    <div id="modal-bg" class="fixed top-0 left-0 w-full h-full min-h-screen bg-[#f5f5f5bb] hidden-modal"></div>
+
+    <section id="modal" class="fixed top-1/2 left-1/2 w-11/12 max-w-[250px] p-6 flex flex-col justify-center items-center rounded-xl bg-green-400 -translate-x-1/2 -translate-y-1/2 transition-all hidden-modal">
+        <h2 class="mb-6 font-semibold text-xl text-center">Great!</h2>
+        <p class="mb-6 text-center text-lg">Your query was sent succesfully.</p>
+        <button type="button" id="close-btn" class="py-2 px-4 rounded-md font-medium text-lg bg-slate-100 hover:bg-slate-200">Close</button>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
