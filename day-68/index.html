@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="./css/output.css">
+
+    <title>HTML-CSS-JS Day-68 Time-Tracking-Dashboard</title>
+</head>
+<body class="w-full h-full min-h-screen py-10 grid place-items-center font-rubik bg-[#0f1424] text-slate-50">
+    <section class="w-11/12 max-w-[320px] grid justify-items-center items-center gap-6 lg:grid-cols-4 lg:max-w-[900px] lg:justify-items-stretch lg:items-stretch">
+
+        <article class="w-full overflow-hidden rounded-xl bg-[#1c1f4a] lg:row-span-2">
+            <div class="p-4 flex flex-row-reverse justify-center items-center gap-4 bg-indigo-600 lg:h-2/3 lg:flex-col-reverse lg:items-start lg:gap-6">
+                <div class="flex flex-col-reverse">
+                    <h1 class="text-xl lg:text-3xl">Jeremy Robson</h1>
+                    <p class="text-slate-300">Report for</p>
+                </div>
+                <img src="./assets/images/image-jeremy.png" alt="jeremy avatar" class="w-20 border-4 border-slate-100 rounded-full">
+            </div>
+            <div class="p-6 flex justify-center items-center gap-6 text-slate-400 lg:flex-col lg:items-start lg:gap-3">
+                <button type="button" class="cursor-pointer hover:text-slate-50 btn" id="daily-btn">Daily</button>
+                <button type="button" class="cursor-pointer hover:text-slate-50 btn" id="weekly-btn">Weekly</button>
+                <button type="button" class="cursor-pointer hover:text-slate-50 btn" id="monthly-btn">Monthly</button>
+            </div>
+        </article>
+
+        <article class="box bg-[#ff8c66]">
+            <img src="assets/images/icon-work.svg" alt="a suitcase" class="icon">
+            <div class="content">
+                <div>
+                    <h2 class="text-lg title">Work</h2>
+                    <p class="text-4xl"><span class="current-values" id="current-work">32</span>hrs</p>
+                </div>
+                <div>
+                    <img src="assets/images/icon-ellipsis.svg" alt="Three points" class="ml-auto mb-6 lg:absolute lg:top-8 lg:right-6">
+                    <p class="text-slate-400">Last Week - <span class="previous-values" id="previous-work">36</span>hrs</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="box bg-[#56c2e6]">
+            <img src="assets/images/icon-play.svg" alt="a suitcase" class="icon">
+            <div class="content">
+                <div>
+                    <h2 class="text-lg title">Play</h2>
+                    <p class="text-4xl"><span class="current-values" id="current-play">10</span>hrs</p>
+                </div>
+                <div>
+                    <img src="assets/images/icon-ellipsis.svg" alt="Three points" class="ml-auto mb-6 lg:absolute lg:top-8 lg:right-6">
+                    <p class="text-slate-400">Last Week - <span class="previous-values" id="previous-play">8</span>hrs</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="box bg-[#ff5c7c]">
+            <img src="assets/images/icon-study.svg" alt="a suitcase" class="icon">
+            <div class="content">
+                <div>
+                    <h2 class="text-lg title">Study</h2>
+                    <p class="text-4xl"><span class="current-values" id="current-study">4</span>hrs</p>
+                </div>
+                <div>
+                    <img src="assets/images/icon-ellipsis.svg" alt="Three points" class="ml-auto mb-6 lg:absolute lg:top-8 lg:right-6">
+                    <p class="text-slate-400">Last Week - <span class="previous-values" id="previous-study">7</span>hrs</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="box bg-[#4acf81]">
+            <img src="assets/images/icon-exercise.svg" alt="a suitcase" class="icon">
+            <div class="content">
+                <div>
+                    <h2 class="text-lg title">Exercise</h2>
+                    <p class="text-4xl"><span class="current-values" id="current-exercise">4</span>hrs</p>
+                </div>
+                <div>
+                    <img src="assets/images/icon-ellipsis.svg" alt="Three points" class="ml-auto mb-6 lg:absolute lg:top-8 lg:right-6">
+                    <p class="text-slate-400">Last Week - <span class="previous-values" id="previous-exercise">5</span>hrs</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="box bg-[#7536d3]">
+            <img src="assets/images/icon-social.svg" alt="a suitcase" class="icon">
+            <div class="content">
+                <div>
+                    <h2 class="text-lg title">Social</h2>
+                    <p class="text-4xl"><span class="current-values" id="current-social">5</span>hrs</p>
+                </div>
+                <div>
+                    <img src="assets/images/icon-ellipsis.svg" alt="Three points" class="ml-auto mb-6 lg:absolute lg:top-8 lg:right-6">
+                    <p class="text-slate-400">Last Week - <span class="previous-values" id="previous-social">10</span>hrs</p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="box bg-[#f1c65b]">
+            <img src="assets/images/icon-self-care.svg" alt="a suitcase" class="icon">
+            <div class="content">
+                <div>
+                    <h2 class="text-lg title">Self Care</h2>
+                    <p class="text-4xl"><span class="current-values" id="current-selfcare">2</span>hrs</p>
+                </div>
+                <div>
+                    <img src="assets/images/icon-ellipsis.svg" alt="Three points" class="ml-auto mb-6 lg:absolute lg:top-8 lg:right-6">
+                    <p class="text-slate-400">Last Week - <span class="previous-values" id="previous-selfcare">2</span>hrs</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

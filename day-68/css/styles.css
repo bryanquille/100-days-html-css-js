@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .box {
+        @apply relative w-full pt-12 overflow-hidden rounded-xl lg:pt-12 lg:flex lg:items-end;
+    }
+
+    .icon {
+        @apply absolute top-0 right-0;
+    }
+
+    .content {
+        @apply relative z-20 w-full p-6 flex justify-between items-center bg-[#1c1f4a] cursor-pointer hover:bg-[#6f76c8] lg:py-8 lg:flex-col lg:items-start lg:gap-4;
+    }
+}
