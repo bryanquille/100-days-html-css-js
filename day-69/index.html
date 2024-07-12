@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/output.css">
+
+    <title>HTML-CSS-JS Day-69 Article-Preview-Component</title>
+</head>
+<body class="w-full h-full min-h-screen grid place-items-center font-Manrope bg-[#ecf2f8]">
+    <section class=" relative w-11/12 max-w-[420px] min-w-[344px] flex flex-col-reverse justify-center items-center overflow-hidden rounded-2xl bg-white lg:max-w-[800px] lg:flex-row-reverse">
+        <div class="p-6">
+            <h1 class="mb-4 font-bold text-pretty text-xl text-[#48556a]">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+            <p class="mb-10 text-pretty text-[#6d7f97]">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I&#39;ve got some simple tips to help you make any room feel complete.</p>
+            <div class="flex justify-between items-center">
+                <div class="flex justify-start items-center gap-4">
+                    <img src="assets/images/avatar-michelle.jpg" alt="user avatar" class="w-12 rounded-full shadow-sm">
+                    <article>
+                        <h2 class="font-bold text-[#48556a]">Michelle Appleton</h2>
+                        <time datetime="28-06-2020" class="text-[#9eafc2]">28 Jun 2020</time>
+                    </article>
+                </div>
+                <button type="button" class="z-10 w-10 h-10 mr-4 cursor-pointer flex justify-center items-center rounded-full bg-[#ecf2f8]" id="share-btn">
+                    <img src="assets/images/icon-share.svg" alt="share icon">
+                </button>
+            </div>
+        </div>
+        <img src="assets/images/drawers.jpg" alt="An image of a night table" class="w-full lg:w-1/2 lg:h-full">
+        
+        <article id="modal" class="absolute bottom-0 w-full px-6 py-10 flex justify-start items-center gap-4 bg-[#48556a] hidden-modal transition-all duration-200 lg:w-1/2  lg:right-0">
+            <h2 class="ml-4 tracking-widest font-semibold text-[#6d7f97]">SHARE</h2>
+            <img src="assets/images/icon-facebook.svg" alt="facebook logo">
+            <img src="assets/images/icon-twitter.svg" alt="twitter logo">
+            <img src="assets/images/icon-pinterest.svg" alt="pinterest logo">
+        </article>
+
+    </section>
+
+    <!-- JavaScript -->
+     <script src="js/script.js"></script>
+</body>
+</html>
