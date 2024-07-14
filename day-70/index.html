@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/output.css">
+
+    <title>HTML-CSS-JS Day-70 Toggle-Pricing-Component</title>
+</head>
+<body class="w-full h-full min-h-screen font-Montserrat bg-pattern bg-no-repeat bg-center bg-cover">
+    <main class="p-8 lg:py-14">
+        <h1 class="mb-5 text-center text-4xl font-bold text-[#6d708d] lg:mb-8">Our Pricing</h1>
+        <div class="mb-6 flex justify-center items-center gap-4 lg:mb-8">
+            <p class="font-semibold text-[#b3b5c6]">Annualy</p>
+            <button type="button" class="relative w-24 h-12 px-2 flex justify-center items-center rounded-full bg-violet-300" id="time-btn">
+                <span class="w-10 h-10 block rounded-full bg-slate-50 transition-all duration-300 left-circle" id="circle"></span>
+            </button>
+            <p class="font-semibold text-[#b3b5c6]">Monthly</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-6 lg:flex-row lg:gap-2">
+            <article class="w-11/12 max-w-[280px] px-4 py-6 flex flex-col justify-center items-center gap-4 rounded-xl bg-slate-200 shadow-md">
+                <h2 class="font-semibold text-xl text-center">Basic</h2>
+                <p class="mb-2 text-5xl font-bold"><span class="text-3xl align-middle">$</span><span id="basic-price">199.99</span></p>
+                <ul class="w-4/5 mb-2 flex flex-col justify-center items-center">
+                    <li class="w-full p-2 border-y-2 text-center font-bold text-[#6d708d] border-[#b3b5c6]">500 GB Storage</li>
+                    <li class="w-full p-2 border-b-2 text-center font-bold text-[#6d708d] border-[#b3b5c6]">2 Users Allowed</li>
+                    <li class="w-full p-2 border-b-2 text-center font-bold text-[#6d708d] border-[#b3b5c6]">Send Up to 3 GB</li>
+                </ul>
+                <button type="button" class="w-4/5 px-4 py-2 rounded-lg bg-violet-500 text-slate-50 text-sm font-semibold uppercase hover:bg-violet-400">Learn More</button>
+            </article>
+
+            <article class="w-11/12 max-w-[280px] px-4 py-6 flex flex-col justify-center items-center gap-4 rounded-xl bg-violet-500 text-slate-50 shadow-md lg:py-10">
+                <h2 class="font-semibold text-xl text-center">Professional</h2>
+                <p class="mb-2 text-5xl font-bold"><span class="text-3xl align-middle">$</span><span id="pro-price">249.99</span></p>
+                <ul class="w-4/5 mb-2 flex flex-col justify-center items-center">
+                    <li class="w-full p-2 border-y-2 text-center font-bold border-[#b3b5c6]">1 TB Storage</li>
+                    <li class="w-full p-2 border-b-2 text-center font-bold border-[#b3b5c6]">5 Users Allowed</li>
+                    <li class="w-full p-2 border-b-2 text-center font-bold border-[#b3b5c6]">Send Up to 10 GB</li>
+                </ul>
+                <button type="button" class="w-4/5 px-4 py-2 rounded-lg bg-slate-200 text-violet-500 text-sm font-semibold uppercase hover:bg-slate-50">Learn More</button>
+            </article>
+            
+            <article class="w-11/12 max-w-[280px] px-4 py-6 flex flex-col justify-center items-center gap-4 rounded-xl bg-slate-200 shadow-md">
+                <h2 class="font-semibold text-xl text-center">Master</h2>
+                <p class="mb-2 text-5xl font-bold"><span class="text-3xl align-middle">$</span><span id="master-price">399.99</span></p>
+                <ul class="w-4/5 mb-2 flex flex-col justify-center items-center">
+                    <li class="w-full p-2 border-y-2 text-center font-bold text-[#6d708d] border-[#b3b5c6]">2 TB Storage</li>
+                    <li class="w-full p-2 border-b-2 text-center font-bold text-[#6d708d] border-[#b3b5c6]">10 Users Allowed</li>
+                    <li class="w-full p-2 border-b-2 text-center font-bold text-[#6d708d] border-[#b3b5c6]">Send Up to 20 GB</li>
+                </ul>
+                <button type="button" class="w-4/5 px-4 py-2 rounded-lg bg-violet-500 text-slate-50 text-sm font-semibold uppercase hover:bg-violet-400">Learn More</button>
+            </article>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
