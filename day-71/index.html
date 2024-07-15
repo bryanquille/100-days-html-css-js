@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-71 Encrypt-Decrypt-Text-App</title>
+</head>
+<body>
+    <section class="container">
+        <h1 class="title-1">Encrypt-Decrypt Text App</h1>
+        <form id="form">
+            <label for="encrypt" class="label">
+                <input type="radio" name="task" id="encrypt" value="encrypt" class="task" checked> Encrypt
+            </label>
+            <label for="decrypt" class="label">
+                <input type="radio" name="task" id="decrypt" value="decrypt" class="task"> Decrypt
+            </label>
+            <textarea name="text" id="text" rows="7" class="text" placeholder="Input text here..." required></textarea>
+            <button type="submit" class="btn" id="btn">Encrypt</button>
+        </form>
+        <p class="result" id="result">Result here</p>
+    </section>
+
+    <!-- JavaScript -->
+     <script src="js/script.js"></script>
+</body>
+</html>
