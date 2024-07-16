@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/output.css">
+
+    <title>HTML-CSS-JS Day-73 Base-Apparel-Coming-Soon-Page</title>
+</head>
+<body class="w-full h-full min-h-screen font-JosefinSans bg-slate-50 lg:grid lg:place-items-center lg:overflow-hidden">
+    <main class="lg:w-full">
+        <header class="p-6 lg:px-20 xl:px-36">
+            <img src="assets/images/logo.svg" alt="Base Apparel logo">
+        </header>
+        <section class="w-full flex flex-col-reverse lg:flex-row lg:gap-4">
+            <div class="w-full max-w-[400px] mx-auto px-6 lg:max-w-none lg:w-3/5 lg:pt-11 lg:px-20 xl:px-36 xl:pt-28">
+                <h1 class="mb-4 text-center text-4xl uppercase tracking-[0.4rem] font-semibold text-[#413a3a] lg:text-6xl lg:mb-6 lg:text-left">
+                    <span class="font-medium text-[#ce9797]">We're</span><br>
+                    coming<br>
+                    soon
+                </h1>
+                <p class="mb-6 text-pretty text-center text-[#ce9797] lg:text-left lg:text-xl">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+                <form id="form" class="mx-auto mb-20 flex items-center justify-center lg:mb-0 lg:justify-start">
+                    <div class="relative w-11/12">
+                        <input type="text" name="email" id="email" placeholder="Email Address" class="w-full p-3 border-2 border-[#ce9797] rounded-full">
+                        <img src="assets/images/icon-error.svg" alt="Icon error" class="absolute top-1/2 right-[3rem] -translate-y-1/2 hid-error" id="error-icon">
+                        <p class="absolute top-full left-4 pt-2 text-red-500 hid-error" id="error-text">Please provide a valid email</p>
+                        <p id="success-text" class="absolute top-full left-4 pt-2 text-green-500 hid-success">Your email was added successfully</p>
+                    </div>
+                    <button type="submit" id="btn" class="relative -ml-10 px-8 py-4 inline-block rounded-full bg-gradient-to-r from-[#f8bfbf] to-[#ee8c8c] hover:bg-gradient-to-r hover:from-rose-200 hover:to-rose-400">
+                        <img src="assets/images/icon-arrow.svg" alt="arrow">
+                    </button>
+                </form>
+            </div>
+            <img src="assets/images/hero-mobile.jpg" alt="hero" class="pb-10 lg:-mt-24 lg:w-1/2 lg:pb-0" id="hero-image">
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+     <script src="js/script.js"></script>
+</body>
+</html>
