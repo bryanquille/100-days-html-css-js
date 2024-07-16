@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-72 Interactive-Card-Details-Form</title>
+</head>
+<body>
+    <main class="main">
+        <section class="hero">
+            <div class="bg-image-container">
+                <img src="assets/images/bg-main-mobile.png" alt="Background image" class="bg-image" id="bg-image">
+            </div>
+            <div class="back-card-container">
+                <img src="assets/images/bg-card-back.png" alt="Back card" class="back-card">
+                <p id="cvc-code-text" class="cvc-code-text">000</p>
+            </div>
+            <div class="front-card-container">
+                <img src="assets/images/bg-card-front.png" alt="Front card" class="front-card">
+                <img src="assets/images/card-logo.svg" alt="Card logo" class="card-logo">
+                <p class="card-number-text" id="card-number-text">0000 0000 0000 0000</p>
+                <div class="card-data-container">
+                    <p class="name-card" id="name-card">John Doe</p>
+                    <p class="date"><span id="month-text">00</span>/<span id="year-text">00</span></p>
+                </div>
+            </div>
+        </section>
+        <form id="form" class="form">
+            <label for="holder-name" class="label">
+                <span class="label-text">Cardholder Name</span>
+            </label>
+            <input type="text" name="holder-name" id="holder-name" class="input-text input" placeholder="John Doe" value="" required>
+            <label for="number" class="label">
+                <span class="label-text">Card Number</span>
+            </label>
+            <input type="text" name="number" id="number" class="input-text input" placeholder="e.g. 1234 5678 9000 0000" value="" required>
+            <div class="digits-container">
+                <p class="label">
+                    <span class="label-text">Exp. Date (MM/YY)</span>
+                    <span class="date-container">
+                        <input type="number" name="date" id="month" max="12" placeholder="MM" class="input date-input" value="" required>
+                        <input type="number" name="date" id="year" max="35" placeholder="YY" class="input date-input" required>
+                    </span>
+                </p>
+                <label for="cvc-code" class="label cvc-label">
+                    <span class="label-text">CVC</span>
+                    <input type="number" name="cvc-code" id="cvc-code" max="999" placeholder="e.g. 123" class="input cvc-input" required>
+                </label>
+            </div>
+            <button type="submit" class="btn" id="confirm-btn">Confirm</button>
+        </form>
+        <div class="modal hidden-modal" id="modal">
+            <img src="assets/images/icon-complete.svg" alt="Complete icon">
+            <h2 class="title-2">THANK YOU!</h2>
+            <p class="succes-message">We've added your card details</p>
+            <button type="button" class="btn" id="continue-btn">Continue</button>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
