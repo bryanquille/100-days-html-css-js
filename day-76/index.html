@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/output.css">
+
+    <title>HTML-CSS-JS Day-76 Intro-Component-with-Sign-up-Form</title>
+</head>
+<body class="relative w-full h-full min-h-screen grid place-items-center bg-Red text-slate-50">
+    <div class="absolute top-0 left-0 w-full h-full min-h-screen bg-pattern bg-no-repeat bg-cover bg-center"></div>
+    <main class="relative w-11/12 max-w-[450px] p-4 flex flex-col justify-center items-center lg:max-w-[900px] lg:flex-row lg:gap-8 xl:max-w-[1024px]">
+        <div class="mb-8 lg:w-2/5">
+            <h1 class="mb-4 text-center text-3xl text-pretty font-bold lg:mb-8 lg:text-5xl lg:text-left">Learn to code by watching others</h1>
+            <p class="text-center text-pretty lg:text-left lg:text-xl">See how experienced developers solve problems in real time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </div>
+        <div>
+            <button type="button" class="w-full mb-6 p-3 rounded-lg text-pretty bg-Blue shadow-md hover:bg-DarkBlue"><span class="font-bold">Try it free 7 days</span> then $20/mo. thereafter</button>
+            <form id="form" class="p-6 rounded-lg bg-slate-50 text-GrayishBlue shadow-md">
+                <label for="first-name" class="label">First name</label>
+                <div class="input-container">
+                    <input type="text" id="first-name" name="first-name" value="" placeholder="First name" class="input">
+                    <img src="assets/images/icon-error.svg" alt="Icon error" id="fn-icon-error" class="icon-error hid-error">
+                </div>
+                <p id="fn-error-text" class="error-text hid-error"><i>First name cannot be empty</i></p>
+
+                <label for="last-name" class="label">Last name</label>
+                <div class="input-container">
+                    <input type="text" name="last-name" id="last-name" value="" placeholder="Last name" class="input">
+                    <img src="assets/images/icon-error.svg" alt="Icon error" id="ln-icon-error" class="icon-error hid-error">
+                </div>
+                <p id="ln-error-text" class="error-text hid-error"><i>Last name cannot be empty</i></p>
+
+                <label for="email" class="label">Email</label>
+                <div class="input-container">
+                    <input type="email" name="email" id="email" value="" placeholder="Email Address" class="input">
+                    <img src="assets/images/icon-error.svg" alt="Icon error" id="email-icon-error" class="icon-error hid-error">
+                </div>
+                <p id="email-error-text" class="error-text hid-error"><i>Looks like this is not an email</i></p>
+
+                <label for="password" class="label">Password</label>
+                <div class="input-container">
+                    <input type="password" name="password" id="password" value="" placeholder="Password" class="input">
+                    <img src="assets/images/icon-error.svg" alt="Icon error" id="pw-icon-error" class="icon-error hid-error">
+                </div>
+                <p id="pw-error-text" class="error-text hid-error"><i>Password cannot be empty</i></p>
+
+                <button type="submit" class="w-full mb-4 p-3 rounded-lg font-semibold uppercase bg-Green text-slate-50 hover:bg-DarkBlue">Claim your free trial</button>
+
+                <p class="w-full px-2 text-center text-pretty">By clicking the button, you're agreeing to our <a href="#" class="font-semibold text-Red">Terms and Services</a></p>
+            </form>
+        </div>
+    </main>
+    <section id="success" class="fixed top-0 left-0 w-full h-full min-h-screen grid place-items-center bg-[#eeeeeeaa] text-DarkBlue hid-success transition-all duration-300">
+        <div class="w-11/12 max-w-[400px] p-6 rounded-xl bg-Red shadow-lg">
+            <h2 class="mb-6 text-2xl font-bold text-center">Great, your free trial has started!</h2>
+            <button type="button" id="close-btn" class="w-11/12 mx-auto p-3 block rounded-lg font-semibold bg-Blue text-slate-50 hover:bg-DarkBlue">Continue</button>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
