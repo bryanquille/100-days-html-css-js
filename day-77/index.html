@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-77 Telephone-Number-Validator</title>
+</head>
+<body>
+    <h1 class="title-1">Telephone Number Validator</h1>
+    <div class="phone-body">
+        <div class="screen">
+            <div class="top">
+                <p class="mobile-operator">fCC</p>
+                <div class="camera">
+                    <span class="lens"></span>
+                </div>
+                <div class="icons">
+                    <span class="material-icons">signal_cellular_alt</span>
+                    <span class="material-icons">wifi</span>
+                    <span class="material-icons">battery_4_bar</span>
+                </div>
+            </div>
+            <p class="date-info" id="date-info"></p>
+            <p class="time-info" id="time-info"></p>
+            <div class="app">
+                <label for="user-input">Enter a phone number:</label>
+                <input type="text" name="user-input" id="user-input" class="input-user" value="">
+                <div id="results-div" class="results"></div>
+                <div class="buttons">
+                    <button type="button" id="check-btn" class="btn">Check</button>
+                    <button type="button" id="clear-btn" class="btn">Clear</button>
+                </div>
+            </div>
+            <div class="bottom">
+                <span class="material-icons">flashlight_on</span>
+                <span class="material-icons">photo_camera</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
