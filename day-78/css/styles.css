@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #EFECEC;
+    color: #0C2D57;
+}
+
+/* MOBILE FIRST */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 1.2rem;
+    background-color: #FC6736;
+}
+
+.title-1 {
+    font-size: 1.4rem;
+}
+
+.button {
+    text-align: left;
+    background-color: #FC6736;
+    border: none;
+}
+
+.fa-solid {
+    padding: 5px 0;
+    font-size: 1.5rem;
+    color: #0C2D57;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100vh;
+    padding: 2rem;
+    margin: 0;
+    overflow: auto;
+    background-color: #FC6736;
+    color: #0C2D57;
+    box-shadow: 0 0 0 100vmax #0C2D5788;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 0;
+    list-style: none;    
+}
+
+.nav-list-item {
+    padding-left: 2px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #FFB0B0;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #0C2D57;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main {
+    padding: 100px 1rem 30px;
+}
+
+.pre {
+    background-color: #FFB0B0;
+    border-radius: 10px;
+}
+
+.html-basics-code {
+    display: inline-block;
+    margin-left: -230px;
+}
+
+.article {
+    margin-left: 20px;
+}
+
+.item {
+    margin-bottom: 7px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (min-width: 769px) {
+    .header {
+        bottom: 0;
+        width: 320px;
+        height: auto;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .fa-solid {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        box-shadow: unset;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list-item {
+        padding-bottom: 8px;
+    }
+
+    .main {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2rem 3rem;
+        width: calc(100vw - 320px);
+    }
+    
+
+    
+}

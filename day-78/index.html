@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/087dfb62b8.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-78 Documentation-Page</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title-1">HTML Documentation</h1>
+        <button class="button open-menu"><i class="fa-solid fa-bars"></i></button>
+        <nav class="navbar">
+            <button class="button close-menu"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="#introduction" class="nav-link">Introduction</a></li>
+                <li class="nav-list-item"><a href="#getting-started" class="nav-link">Getting Started</a></li>
+                <li class="nav-list-item"><a href="#html-basics" class="nav-link">HTML Basics</a></li>
+                <li class="nav-list-item"><a href="#html-elements" class="nav-link">HTML Elements</a></li>
+                <li class="nav-list-item"><a href="#html-attributes" class="nav-link">HTML Attributes</a></li>
+                <li class="nav-list-item"><a href="#document-structure" class="nav-link">Document Structure</a></li>
+                <li class="nav-list-item"><a href="#best-practices" class="nav-link">Best Practices</a></li>
+                <li class="nav-list-item"><a href="#advanced-topics" class="nav-link">Advanced Topics</a></li>
+                <li class="nav-list-item"><a href="#common-pitfalls" class="nav-link">Common Pitfalls</a></li>
+                <li class="nav-list-item"><a href="#browser-compatibility" class="nav-link">Browser Compatibility</a></li>
+                <li class="nav-list-item"><a href="#practical-examples" class="nav-link">Practical Examples</a></li>
+                <li class="nav-list-item"><a href="#aditional-resources" class="nav-link">Aditional Resources</a></li>
+            </ul>
+        </nav>
+    </header>  
+    <main class="main">
+        <section class="main-section">
+            <h2 class="title-2" id="introduction">Introduction</h2>
+            <p class="text">Welcome to the HTML documentation page. HTML (Hypertext Markup Language) is the standard markup language for creating web pages. This comprehensive documentation will cover everything you need to know about HTML, including its syntax, elements, attributes, document structure, best practices, advanced topics, common pitfalls, browser compatibility, and additional resources.</p>
+        </section>
+        <section class="main-section">
+            <h2 class="title-2" id="getting-started">Getting Started</h2>
+            <p class="text">HTML is a simple and straightforward language used to create web pages. All you need is a text editor and a web browser to get started. To create an HTML file, simply open a new text document and save it with a .html extension.</p>
+        </section>
+        <section class="main-section">
+            <h2 class="title-2" id="html-basics">HTML Basics</h2>
+            <p class="text">HTML consists of a series of elements that define the structure of a web page. Each element is represented by tags enclosed in angle brackets (&lt; &gt;). Here's a basic example of an HTML document structure:</p>
+            <pre class="pre">
+                <code class="html-basics-code">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;My First Web Page&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+                        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
+        </section>
+        <section class="main-section">
+            <h2 class="title-2" id="html-elements">HTML Elements</h2>
+            <p class="text">HTML elements are the building blocks of web pages. They can be categorized into several types, including:</p>
+            <article class="article">
+                <h3 class="title-3">Text Elements</h3>
+                <ul class="ulist">
+                    <li class="item"><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Headings of decreasing size</li>
+                    <li class="item"><code>&lt;p&gt;</code>: Paragraph</li>
+                    <li class="item"><code>&lt;span&gt;</code>: Inline container</li>
+                </ul>
+            </article>
+            <article class="article">
+                <h3 class="title-3">Links</h3>
+                <ul class="ulist">
+                    <li class="item"><code>&lt;a&gt;</code>: Anchor element for creating hyperlinks</li>
+                </ul>
+            </article>
+            <article class="article">
+                <h3 class="title-3">Images</h3>
+                <ul class="ulist">
+                    <li class="item"><code>&lt;img&gt;</code>: Image element for embedding images</li>
+                </ul>
+            </article>
+            <article class="article">
+                <h3 class="title-3">Lists</h3>
+                <ul class="ulist">
+                    <li class="item"><code>&lt;ul&gt;</code>: Unordered list</li>
+                    <li class="item"><code>&lt;ol&gt;</code>: Ordered list</li>
+                    <li class="item"><code>&lt;li&gt;</code>: List item</li>
+                </ul>
+            </article>
+            <article class="article">
+                <h3 class="title-3">Forms</h3>
+                <ul class="ulist">
+                    <li class="item"><code>&lt;form&gt;</code>: Form element</li>
+                    <li class="item"><code>&lt;input&gt;</code>: Input field</li>
+                    <li class="item"><code>&lt;button&gt;</code>: Button element</li>
+                </ul>
+            </article>
+            <p class="text">Each element has its own purpose and attributes that define its behavior and appearance.</p>
+        </section>
+        <section class="main-section">
+            <h2 class="title-2" id="html-attributes">HTML Attributes</h2>
+            <p class="text">Attributes provide additional information about an element and are specified within the opening tag. Some common attributes include:</p>
+            <ul class="ulist">
+                <li class="item"><code>&lt;id&gt;</code>: Specifies a unique identifier for an element.</li>
+                <li class="item"><code>&lt;class&gt;</code>: Specifies one or more class names for an element.</li>
+                <li class="item"><code>&lt;src&gt;</code>: Specifies the URL of an external resource, such as an image or script.</li>
+                <li class="item"><code>&lt;href&gt;</code>: Specifies the URL of the linked resource for anchor elements.</li>
+            </ul>
+        </section>
+        <section class="main-section">
+            <h2 class="title-2" id="document-structure">Document Structure</h2>
+            <p class="text">A typical HTML document structure consists of several main sections:</p>
+            <ul class="ulist">
+                <li class="item"><code>&lt;!DOCTYPE html&gt;</code>: Defines the document type and version of HTML.</li>
+                <li class="item"><code>&lt;html&gt;</code>: The root element of the HTML document.</li>
+                <li class="item"><code>&lt;head&gt;</code>: Contains meta-information about the document, such as title, stylesheets, and scripts.</li>
+                <li class="item"><code>&lt;body&gt;</code>: Contains the content of the document visible to users.</li>
+            </ul>
+        </section>
+        <section class="main-section">
+            <h2 class="title-2" id="best-practices">Best Practices</h2>
+            <p class="text">When writing HTML code, it's important to follow best practices to ensure readability, accessibility, and maintainability. Some tips include:</p>
+            <ul class="ulist">
+                <li class="item"><span class="bold">Use Semantic HTML:</span> Choose appropriate elements that convey the meaning of your content.</li>
+                <li class="item"><span class="bold">Indentation:</span> Use consistent indentation to improve readability.</li>
+                <li class="item"><span class="bold">Comments:</span> Add comments to explain complex or important sections of your code.</li>
+                <li class="item"><span class="bold">Accessibility:</span> Ensure your HTML is accessible to all users, including those using assistive technologies.</li>
+            </ul>
+        </section>
+        <section class="main-section">
+            <h2 class="title-2" id="advanced-topics">Advanced Topics</h2>
+            <p class="text">Explore advanced HTML topics to enhance your web development skills:</p>
+            <ul class="ulist">
+                <li class="item"><span class="bold">HTML5 Features:</span> Learn about new features introduced in HTML5, such as semantic elements (<code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>), audio and video elements (<code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code>), and canvas element (<code>&lt;canvas&gt;</code>).</li>
+                <li class="item"><span class="bold">HTML Forms:</span> Dive deeper into HTML forms and learn about form validation, input types, attributes, and form submission methods.</li>
+                <li class="item"><span class="bold">Responsive Web Design:</span> Understand how to create responsive web pages using HTML and CSS media queries to adapt to different screen sizes and devices.</li>
+            </ul>
+        </section>
+        <section class="main-section">
+            <h2 class="title-2" id="common-pitfalls">Common Pitfalls</h2>
+            <p class="text">Avoid common pitfalls when working with HTML:</p>
+            <ul class="ulist">
+                <li class="item"><span class="bold">Mismatched Tags:</span> Ensure all opening tags have corresponding closing tags to prevent rendering issues.</li>
+                <li class="item"><span class="bold">Overusing Tables:</span> Avoid using tables for layout purposes. Instead, use CSS for layout and styling.</li>
+                <li class="item"><span class="bold">Inline Styles:</span> Minimize the use of inline styles and prefer external CSS for better maintainability.</li>
+                <li class="item"><span class="bold">Accessibility Issues:</span> Pay attention to accessibility best practices to ensure your web content is accessible to all users.</li>
+            </ul>
+        </section>
+        <section class="main-section">
+            <h2 class="title-2" id="browser-compatibility">Browser Compatibility</h2>
+            <p class="text">Be aware of browser compatibility issues when writing HTML code:</p>
+            <ul class="ulist">
+                <li class="item"><span class="bold">Vendor Prefixes:</span> Use vendor prefixes for CSS properties to ensure compatibility with older browser versions.</li>
+                <li class="item"><span class="bold">Feature Detection:</span> Use feature detection techniques to detect browser capabilities and provide fallbacks for unsupported features.</li>
+                <li class="item"><span class="bold">Testing:</span> Test your web pages across different browsers and devices to ensure consistent rendering and functionality.</li>
+            </ul>
+        </section>
+        <section class="main-section">
+            <h2 class="title-2" id="practical-examples">Practical Examples</h2>
+            <p class="text">Explore practical examples to see HTML in action:</p>
+            <ul class="ulist">
+                <li class="item"><span class="bold">Basic Web Page:</span> Create a simple web page with headings, paragraphs, images, and links.</li>
+                <li class="item"><span class="bold">HTML Form:</span> Build a form with various input fields and validation.</li>
+                <li class="item"><span class="bold">Responsive Layout:</span> Design a responsive web page that adapts to different screen sizes using HTML and CSS.</li>
+            </ul>
+        </section>
+        <section class="main-section">
+            <h2 class="title-2" id="aditional-resources">Aditional Resources</h2>
+            <p class="text">Explore more about HTML with these additional resources:</p>
+            <ul class="ulist">
+                <li class="item"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="src-link">Mozilla Developer Network (MDN) HTML Documentation</a></li>
+                <li class="item"><a href="https://www.w3schools.com/html/" target="_blank" class="src-link">W3Schools HTML Tutorial</a></li>
+                <li class="item"><a href="https://html5doctor.com/" target="_blank" class="src-link">HTML5 Doctor</a>: Articles and tutorials on HTML5</li>
+                <li class="item"><a href="https://validator.w3.org/" target="_blank" class="src-link">HTML Validator</a>: Validate your HTML code for correctness</li>
+            </ul>
+        </section>
+    </main> 
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
