@@ -9,7 +9,7 @@ const heroImg = document.querySelector('#hero-img');
 window.addEventListener('load', () => {
     console.log(window.innerWidth);
     if (window.innerWidth >= 1024) {
-        heroImg.src = '../assets/images/image-web-3-desktop.jpg';
+        heroImg.src = './assets/images/image-web-3-desktop.jpg';
     }
 });
 
