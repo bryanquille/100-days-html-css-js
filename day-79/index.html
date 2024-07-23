@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/output.css">
+
+    <title>HTML-CSS-JS Day-79 News-Homepage</title>
+</head>
+<body class="w-full h-full min-h-screen font-Inter bg-OffWhite text-VeryDarkBlue">
+    <header class="fixed top-0 left-0 w-full px-4 py-3 flex justify-between items-center bg-OffWhite md:px-8 md:py-5 lg:px-16 lg:py-6">
+        <img src="assets/images/logo.svg" alt="Logo">
+        <button type="button" id="hamb-menu" class="show-menu-btn lg:hidden">
+            <img src="assets/images/icon-menu.svg" alt="Open menu icon" class="show-open-btn" id="open-menu-icon">
+            <img src="assets/images/icon-menu-close.svg" alt="Close menu icon" class="hid-close-btn" id="close-menu-icon">
+        </button>
+        <div class="absolute top-0 left-0 w-full h-full min-h-screen bg-OffWhite opacity-70 hid-mask lg:hidden" id="mask"></div>
+        <nav class="absolute top-0 right-0 w-full max-w-[400px] h-full min-h-screen flex flex-col justify-center items-center bg-OffWhite transition-all duration-300 hid-menu lg:relative lg:opacity-100 lg:visible lg:w-fit lg:max-w-[unset] lg:h-fit lg:min-h-[unset]" id="navbar">
+            <ul class="h-3/4 flex flex-col justify-evenly items-center lg:h-[unset] lg:flex-row lg:gap-8">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">New</a></li>
+                <li><a href="#" class="nav-link">Popular</a></li>
+                <li><a href="#" class="nav-link">Trending</a></li>
+                <li><a href="#" class="nav-link">Categories</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="px-4 pt-20 md:px-8 lg:px-16 lg:pt-32">
+        <div class="lg:flex lg:justify-center lg:items-start lg:gap-8 lg:mb-12">
+            <section class="mb-8 flex flex-col-reverse lg:w-[60%] xl:w-[70%]">
+                <div class="lg:flex lg:gap-6">
+                    <h1 class="mb-4 font-bold text-3xl md:text-4xl lg:w-1/2 lg:text-6xl">The Bright Future of Web 3.0?</h1>
+                    <div class="lg:w-1/2">
+                        <p class="mb-4 text-DarkGrayishBlue md:text-lg lg:mb-8">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fullfilling its promise?</p>
+                        <button type="button" class="px-8 py-3 rounded-md font-semibold bg-SoftRed md:py-4 md:text-xl hover:bg-VeryDarkBlue hover:text-OffWhite">READ MORE</button>
+                    </div>
+                </div>
+                <img src="assets/images/image-web-3-mobile.jpg" alt="Reference image of web 3.0" id="hero-img" class="mb-4 md:mb-6 lg:mb-12">
+            </section>
+            <section class="mb-8 p-6 bg-VeryDarkBlue text-OffWhite md:p-8 md:mb-10 lg:w-[40%] xl:w-[30%]">
+                <h2 class="mb-6 font-bold text-3xl text-SoftOrange md:text-4xl">New</h2>
+                <article>
+                    <h3 class="title-3">Hydrogen VS Electric Cars</h3>
+                    <p class="news-text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                </article>
+                <hr class="mb-5">
+                <article>
+                    <h3 class="title-3">The Downsides of AI Artistry</h3>
+                    <p class="news-text">What are the possible adverse affects of on-demand AI image generation?</p>
+                </article>
+                <hr class="mb-5">
+                <article>
+                    <h3 class="title-3">Is VC Funding Drying Up?</h3>
+                    <p class="news-text mb-0">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                </article>
+            </section>
+        </div>
+        <section class="w-full flex flex-col items-start lg:flex-row lg:gap-6">
+            <article class="other-topic-container">
+                <div>
+                    <div class="flex flex-col-reverse">
+                        <h2 class="last-title-2">Reviving Retro PCs</h2>
+                        <p class="number-new">01</p>
+                    </div>
+                    <p class="last-text">What happens when old PCs are given modern upgrades?</p>
+                </div>
+                <img src="assets/images/image-retro-pcs.jpg" alt="A retro PC" class="ot-img">
+            </article>
+            <article class="other-topic-container">
+                <div>
+                    <div class="flex flex-col-reverse">
+                        <h2 class="last-title-2">Top 10 laptops of 2024</h2>
+                        <p class="number-new">02</p>
+                    </div>
+                    <p class="last-text">Our best picks for various needs and budgets.</p>
+                </div>
+                <img src="assets/images/image-top-laptops.jpg" alt="Keys from a keyboard" class="ot-img">
+            </article>
+            <article class="other-topic-container">
+                <div>
+                    <div class="flex flex-col-reverse">
+                        <h2 class="last-title-2">The Growth of Gaming</h2>
+                        <p class="number-new">03</p>
+                    </div>
+                    <p class="last-text">How the pandemic has sparked fresh opportunities.</p>
+                </div>
+                <img src="assets/images/image-gaming-growth.jpg" alt="A gaming control" class="ot-img">
+            </article>
+        </section>
+    </main>
+
+    <!-- JAvaScript -->
+     <script src="js/script.js"></script>
+</body>
+</html>
