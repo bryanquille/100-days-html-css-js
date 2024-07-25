@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-81 Gradient-Generator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="gradient-box"></div>
+        <div class="row options">
+            <div class="column direction">
+                <p>Direction</p>
+                <div class="select-box">
+                    <select>
+                        <option value="to top">Top</option>
+                        <option value="to right top">Right Top</option>
+                        <option value="to right">Right</option>
+                        <option value="to right bottom">Right Bottom</option>
+                        <option value="to bottom">Bottom</option>
+                        <option value="to left bottom">Left Bottom</option>
+                        <option value="to left">Left</option>
+                        <option value="to left top" selected>Left Top</option>
+                    </select>
+                </div>
+            </div>
+            <div class="column colors">
+                <p>Colors</p>
+                <div class="inputs">
+                    <input type="color" value="#5665E9">
+                    <input type="color" value="#A271F8">
+                </div>
+            </div>
+        </div>
+        <textarea class="row">background: linear-gradient(to left top, #5665e9, #a271f8)</textarea>
+        <div class="row buttons">
+            <button type="button" class="refresh btn">Refresh Colors</button>
+            <button type="button" class="copy btn">Copy Code</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+     <script src="js/script.js"></script>
+</body>
+</html>

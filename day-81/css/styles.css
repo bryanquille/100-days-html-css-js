@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color1: #405D72;
+    --color2: #758694;
+    --color3: #F7E7DC;
+    --color4: #FFF8F3;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--color1);
+}
+
+p {
+    margin-bottom: 0.5rem;
+    font-style: 1.12rem;
+}
+
+select {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.12rem;
+    background: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--color1);
+    border-radius: 5px;
+    font-size: 1.05rem;
+    resize: none;
+    color: var(--color2);
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 450px;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    background-color: var(--color3);
+    box-shadow: -1px -1px 2px var(--color4);
+}
+
+.gradient-box {
+    width: 100%;
+    height: 12rem;
+    border-radius: 8px;
+    background: linear-gradient(to left top, #5665E9, #A271F8);
+}
+
+.row {
+    margin: 1.2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-box {
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--color1);
+    border-radius: 5px;
+}
+
+.row :where(.column, .buttons) {
+    width: calc(100% / 2 - 0.8rem);
+}
+
+.colors {
+    margin-left: 3.75rem;
+}
+
+.colors input {
+    width: calc(100%/2 - 1.2rem);
+    height: 2.8rem;
+}
+
+.colors input:last-child {
+    margin-left: 0.4rem;
+}
+
+.buttons {
+    gap: 1.5rem;
+}
+
+.btn {
+    cursor: pointer;
+    width: 50%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.05rem;
+    color: var(--color4);
+}
+
+.refresh {
+    background-color: var(--color1);
+}
+
+.copy {
+    background-color: var(--color2);
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
