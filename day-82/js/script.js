@@ -8,7 +8,7 @@ const initBattery = () => {
             let level = Math.floor(batt.level * 100);
             batteryPercentage.innerHTML = `${level}%`;
             batteryLiquid.style.height = `${parseInt(batt.level * 100)}%`;
-            if (level = 100) {
+            if (level == 100) {
                 batteryStatus.innerHTML = `Battery Full <span class="material-icons green-color">power</span>`;
                 batteryLiquid.style.height = '103%';
             } else if (level <= 20 &! batt.charging) {
