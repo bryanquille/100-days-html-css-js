@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-82 Captcha-App</title>
+</head>
+<body>
+    <div class="captcha-container">
+        <div class="captcha">
+            <canvas class="canvas" id="captcha" width="200" height="40"></canvas>
+            <button type="button" id="reload-btn" class="reload-btn">Reload</button>
+        </div>
+        <div class="user">
+            <input type="text" id="captcha-input" class="captcha-input" value="" placeholder="Enter CAPTCHA">
+            <button type="button" id="check-btn" class="check-btn">Check CAPTCHA</button>
+        </div>
+        <p class="status-text">Status: <span id="status">IDLE</span></p>
+    </div>
+
+    <!-- JavaScript -->
+     <script src="js/script.js"></script>
+</body>
+</html>

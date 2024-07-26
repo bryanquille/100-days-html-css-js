@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color1: #F5F5F5;
+    --color2: #47B5FF;
+    --color3: #1363DF;
+    --color4: #06283D;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: "Lato", sans-serif;
+    background-color: var(--color1);
+    color: var(--color4);
+}
+
+.captcha-container {
+    width: 90%;
+    max-width: 400px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    border-radius: 12px;
+    background-color: var(--color1);
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.3);
+}
+
+.captcha {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.captcha-input,
+.check-btn,
+.reload-btn {
+    width: 100%;
+    padding: 0.75rem;
+    border-width: 1px;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+}
+
+.reload-btn {
+    cursor: pointer;
+    border-color: var(--color2);
+    background-color: var(--color2);
+    font-weight: 500;
+}
+
+.captcha-input {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.check-btn {
+    cursor: pointer;
+    border-color: var(--color3);
+    background-color: var(--color3);
+    color: var(--color1);
+    font-weight: 600;
+}
+
+.status-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.canvas {
+    border: none;
+    border: 2px solid var(--color3);
+    border-radius: 0.25rem;
+    background-color: var(--color1);
+}
+
+.reload-btn:hover {
+    background-color: var(--color3);
+    color: var(--color2);
+}
+
+.check-btn:hover {
+    background-color: var(--color4);
+}
