@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>HTML-CSS-JS Day-85 URL-Shortener</title>
+</head>
+<body>
+    <section class="container">
+        <div class="image-title-container">
+            <h1 class="title-1">URL Shortener</h1>
+            <img src="assets/images/link.svg" alt="Link icon" class="link-img">
+        </div>
+        <form id="form">
+            <label for="previous-url" class="label">Enter the URL to short:</label>
+            <input type="url" name="previous-url" id="previous-url" class="input" required>
+            <div class="buttons-container">
+                <button type="button" class="btn" id="reset-btn">Reset</button>
+                <button type="submit" class="btn" id="submit-btn">Short it</button>
+            </div>
+            <label for="result" class="label">Shortened URL:</label>
+            <textarea name="result" id="result" rows="3" class="result" disabled>Result here...</textarea>
+            <button type="button" class="btn copy-btn" id="copy-btn">Copy Shortened URL</button>
+        </form>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
