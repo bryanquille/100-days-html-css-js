@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --color1: #201E43;
+    --color2: #134B70;
+    --color3: #508C9B;
+    --color4: #EEEEEE;
+    --color5: #EEEEEE33;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--color1);
+    color: var(--color4);
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    border-radius: 12px;
+    background-color: var(--color2);
+    box-shadow: 0 10px 20px var(--color5);
+}
+
+.title-1 {
+    margin-bottom: 0.2rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.label {
+    width: 100%;
+    text-align: left;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    border: 1px solid var(--color4);
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.btn {
+    cursor: pointer;
+    width: 50%;
+    padding: 0.5rem 1rem;
+    border-color: var(--color3);
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: var(--color3);
+    color: var(--color4);
+    transition: all 0.2s ease-in;
+}
+
+.code-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.text {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.hid {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show {
+    position: relative;
+    z-index: unset;
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn:hover {
+    border-color: var(--color4);
+    background-color: var(--color4);
+    color: var(--color1);
+}
