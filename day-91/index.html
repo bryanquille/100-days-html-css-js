@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-91 Take-Screenshot-App</title>
+</head>
+<body>
+    <section class="login-container">
+        <form class="login-form" id="form">
+            <h2 class="title-2">Login</h2>
+            <div class="input-group">
+                <label for="username" class="label">Username</label>
+                <input type="text" id="username" placeholder="Enter username" required class="input">
+            </div>
+            <div class="input-group">
+                <label for="password" class="label">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required class="input">
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </section>
+
+    <button type="button" id="screenshot-btn" class="screenshot-btn">Take Screenshot</button>
+
+    <!-- JavaScript -->
+     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
