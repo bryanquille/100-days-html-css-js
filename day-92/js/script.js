@@ -46,7 +46,7 @@ const sqRecGeometry = (w, h, t, l) => {
     return [calcArea, calcVol, calcMass];
 }
 
-const RdGeometry = (d, t, l) => {
+const rdGeometry = (d, t, l) => {
     if (d === '' || t === '' || l === '') {
         alert('Please insert all required values');
         return;
@@ -58,8 +58,31 @@ const RdGeometry = (d, t, l) => {
     return [calcArea, calcVol, calcMass];
 }
 
-select.addEventListener('change', () => {
+const iGeometry = (w, h, t, l) => {
+    if (w === '' || h === '' || t === '' || l === '') {
+        alert('Please insert all required values');
+        return;
+    }
+    const calcArea = ((w * 2) + h) * t;
+    const calcVol = calcArea * l;
+    const calcMass = (calcVol / (1000 ** 3)) * 7850;
+
+    return [calcArea, calcVol, calcMass];
+}
+
+select.addEventListener('change', (e) => {
     const selectValue = select.value;
+
+    const optionsList = [...e.currentTarget.children];
+    optionsList.forEach(option => {
+        option.selected = false;
+    });
+
+    area.textContent = '00';
+    volume.textContent = '00';
+    mass.textContent = '00';
+    form.reset();
+
     switch (selectValue) {
         case 'square-bar':
             profileImage.src = `assets/images/square-bar.webp`;
@@ -67,6 +90,7 @@ select.addEventListener('change', () => {
             diameter.disabled = true;
             width.disabled = false;
             height.disabled = false;
+            optionsList[0].selected = true;
             break;
         case 'round-bar':
             profileImage.src = `assets/images/round-bar.webp`;
@@ -74,6 +98,7 @@ select.addEventListener('change', () => {
             thickness.disabled = true;
             width.disabled = true;
             height.disabled = true;
+            optionsList[1].selected = true;
             break;
         case 'square-tube':
             profileImage.src = `assets/images/square-tube.webp`;
@@ -81,6 +106,7 @@ select.addEventListener('change', () => {
             diameter.disabled = true;
             width.disabled = false;
             height.disabled = false;
+            optionsList[2].selected = true;
             break;
         case 'round-tube':
             profileImage.src = `assets/images/round-tube.webp`;
@@ -88,6 +114,7 @@ select.addEventListener('change', () => {
             diameter.disabled = false;
             width.disabled = true;
             height.disabled = true;
+            optionsList[3].selected = true;
             break;
         case 'rect-tube':
             profileImage.src = `assets/images/rect-tube.webp`;
@@ -95,6 +122,7 @@ select.addEventListener('change', () => {
             diameter.disabled = true;
             width.disabled = false;
             height.disabled = false;
+            optionsList[4].selected = true;
             break;
         case 'i-profile':
             profileImage.src = `assets/images/i-profile.webp`;
@@ -102,6 +130,7 @@ select.addEventListener('change', () => {
             diameter.disabled = true;
             width.disabled = false;
             height.disabled = false;
+            optionsList[5].selected = true;
             break;
         default:
             break;
@@ -114,29 +143,36 @@ form.addEventListener('submit', (e) => {
 
     const widthValue = Number(width.value);
     const heightValue = Number(height.value);
-    const lengthValue = Number(length.value);
     const diameterValue = Number(diameter.value);
+    const thicknessValue = Number(thickness.value);
+    const lengthValue = Number(length.value);
+
+    let response = null;
     
     switch (selectValue) {
         case 'square-bar':
-            solidSqGeometry(widthValue, heightValue, lengthValue);
+            response = solidSqGeometry(widthValue, heightValue, lengthValue);
             break;
         case 'round-bar':
-            
+            response = solidRdGeometry(diameterValue, lengthValue);
             break;
         case 'square-tube':
-            
+            response = sqRecGeometry(widthValue, heightValue, thicknessValue, lengthValue);
             break;
         case 'round-tube':
-
+            response = rdGeometry(diameterValue, thicknessValue, lengthValue);
             break;
         case 'rect-tube':
-            
+            response = sqRecGeometry(widthValue, heightValue, thicknessValue, lengthValue);
             break;
         case 'i-profile':
-            
+            response = iGeometry(widthValue, heightValue, thicknessValue, lengthValue);
             break;
         default:
             break;
     }
+
+    area.textContent = response[0].toFixed(2);
+    volume.textContent = response[1].toFixed(2);
+    mass.textContent = response[2].toFixed(2);
 });
