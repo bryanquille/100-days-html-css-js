@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-92 Steel-Profile-Geometry</title>
+</head>
+<body>
+    <section class="container-app">
+        <h1 class="title-1">Steel Profile Geometry</h1>
+        <img src="assets/images/square-bar.webp" alt="Profile image" class="profile-image hid-image" id="profile-image">
+        <form class="form" id="form">
+            <div>
+                <label for="profile" class="label">Select a Profile</label>
+                <select name="profile" id="profile" class="select">
+                    <option value="square-bar" selected>Square Bar</option>
+                    <option value="round-bar">Round Bar</option>
+                    <option value="square-tube">Square Tube</option>
+                    <option value="round-tube">Round Tube</option>
+                    <option value="rect-tube">Rectangular Tube</option>
+                    <!-- <option value="c-profile">C Profile</option>
+                    <option value="u-profile">U Profile</option>
+                    <option value="angle">Angle</option> -->
+                    <option value="i-profile">I profile</option>
+                </select>
+            </div>
+            <div class="inputs-container">
+                <label for="width" class="label">Width</label>
+                <input type="number" name="width" id="width" placeholder="Width in mm" class="input" value="">
+
+                <label for="height" class="label">Height</label>
+                <input type="number" name="height" id="height" placeholder="Height in mm" class="input" value="">
+
+                <label for="diameter" class="label">Diameter</label>
+                <input type="number" name="diameter" id="diameter" placeholder="Diameter in mm" class="input" value="" disabled>
+                
+                <label for="thickness" class="label">Thickness</label>
+                <input type="number" name="thickness" id="thickness" placeholder="Thickness in mm" class="input" value="" disabled>
+
+                <label for="length" class="label">Length</label>
+                <input type="number" name="length" id="length" placeholder="Length in mm" class="input" value="">
+            </div>
+            <button type="submit" id="calculate-btn" class="calculate-btn">Calculate</button>
+        </form>
+        <div class="results hid-results">
+            <p class="text">Transversal area: <span id="transversal-area">00</span> mm<sup>2</sup></p>
+            <p class="text">Volume: <span id="volume">00</span> mm<sup>3</sup></p>
+            <p class="text">Mass: <span id="mass">00</span> kg</p>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
