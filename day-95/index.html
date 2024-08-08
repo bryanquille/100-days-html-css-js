@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/output.css">
+
+    <title>HTML-CSS-JS Day-95 Profile-Card-Creation</title>
+</head>
+<body class="w-full h-full min-h-screen py-8 grid place-items-center font-Inter bg-slate-100">
+    <section id="creation-form" class="w-11/12 max-w-[450px] p-6 rounded-xl bg-violet-200 shadow-lg transition-all duration-300">
+        <h1 class="mb-5 font-bold text-3xl text-center">Profile Card Creation Form</h1>
+        <form id="form">
+            <label for="name" class="label">Name</label>
+            <input type="text" name="name" id="name" class="info-input" required>
+
+            <label for="age" class="label">Age</label>
+            <input type="number" name="age" id="age" class="info-input" required>
+
+            <label for="email" class="label">Email</label>
+            <input type="email" name="email" id="email" class="info-input" required>
+
+            <label for="location" class="label">Country</label>
+            <input type="text" name="location" id="location" class="info-input" required>
+
+            <label for="profile-photo" class="label mb-8 cursor-pointer">
+                <img src="assets/images/profile-image.svg" alt="Profile image icon" id="profile-image-icon" class="w-1/2 mx-auto mb-2 block rounded-full">
+                <p class="text-center text-slate-500">Upload profile photo</p>
+            </label>
+            <input type="file" name="profile-photo" id="profile-photo" accept="image/png, image/jpeg" class="hidden">
+
+            <button type="submit" class="btn">Create Profile Card</button>
+        </form>
+    </section>
+    <section id="profile-card" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 max-w-[400px] p-6 rounded-2xl bg-blue-400 shadow-xl transition-all duration-300 hid-card">
+        <h2 class="mb-6 text-center text-2xl font-semibold" id="name-data">John Doe</h2>
+        <img src="assets/images/profile-image.svg" alt="Profile photo" id="profile-image" class="w-3/4 mx-auto mb-6 block rounded-full">
+        <div>
+            <p class="text"><span class="bold-text">Age:</span> <span id="age-data">25</span></p>
+            <p class="text"><span class="bold-text">Email:</span> <span id="email-data">johndoe@fakemail.com</span></p>
+            <p class="text"><span class="bold-text">Country:</span> <span id="location-data">USA</span></p>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
