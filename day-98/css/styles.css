@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: "Montserrat", sans-serif;
+    background-color: #c5ddae;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    padding: 1.5rem;
+    border: 2px solid #333333;
+    border-radius: 12px;
+    background-color: #f5f5f5;
+    box-shadow: 5px 5px 1px #333333;
+}
+
+.title-1 {
+    margin-bottom: 0.4rem;
+}
+
+.requests-number {
+    margin-bottom: 1.5rem;
+}
+
+.requests-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1.2rem;
+}
+
+.request {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid #888888;
+    border-radius: 10px;
+}
+
+.info-avatar-container {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title-2 {
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+}
+
+.mutual-friends {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #777777;
+}
+
+.avatar {
+    width: 60px;
+    border-radius: 100%;
+}
+
+.buttons {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.material-symbols-outlined {
+    font-size: 0.9rem;
+}
+
+.decline-btn {
+    border: none;
+    background-color: transparent;
+    color: #5e7967;
+}
+
+.confirm-btn {
+    border-color: #7fdab2;
+    border-width: 1px;
+    border-radius: 8px;
+    background-color: #7fdab2;
+}
+
+.modal {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #7fdab2;
+    transition: all 0.3s ease-in;
+    transform: translateX(-50%);
+}
+
+.hid-modal {
+    transform: translate(-50%, 150%);
+}
+
+.show-modal {
+    transform: translate(-50%, 0%);
+}
+
+.empty {
+    width: 100%;
+    text-align: center;
+}
+
+.decline-btn:hover {
+    color: #ff4d4d;
+}
+
+.confirm-btn:hover {
+    border-color: #58cc22;
+    background-color: #58cc22;
+}
