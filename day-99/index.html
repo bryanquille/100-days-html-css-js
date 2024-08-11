@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Google Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>HTML-CSS-JS Day-99 Cookies-Banner</title>
+</head>
+<body>
+    <section class="container">
+        <h1 class="title-1">Cookies Banner</h1>
+        <div id="cookies-info" class="cookies-info"></div>
+        <img src="assets/images/cookie.svg" alt="Chocolate chip cookie" class="cookie-img">
+    </section>
+    <div class="blur-bg hid-blur-bg" id="blur-bg"></div>
+    <section class="cookies-dlg-box hid-modal" id="cookies-dlg-box">
+        <h2 class="title-2">Can we use cookies?</h2>
+        <img src="assets/images/cookie-icon.svg" alt="Chocolate chip cookie" class="cookie-icon">
+        <p class="text">We use cookies to enhace your browsing experience, analyze site traffic, and personalize content. By clicking "Accept All", you consent to the use of all cookies. You can manage your preferences or opt out by clicking "Customize".</p>
+        <div class="buttons">
+            <button type="button" class="btn customize-btn" id="customize-btn">Customize</button>
+            <button type="button" class="btn accept-btn" id="accept-btn">Accept All</button>
+        </div>
+    </section>
+    <section class="customizable-dlg-box hid-modal" id="customizable-dlg-box">
+        <h2 class="title-2">Customize your preferences</h2>
+        <button type="button" id="back-btn" class="back-btn">
+            <span class="material-symbols-outlined">arrow_back</span>
+        </button>
+        <img src="assets/images/cookie-icon.svg" alt="Chocolate chip cookie" class="cookie-icon">
+        <form class="form">
+            <div class="input-container">
+                <p>Neccessary</p>
+                <label for="neccessary" class="label blocked checked">
+                    <input type="checkbox" name="preferences" id="neccessary" class="input-checkbox" checked disabled>
+                    <span class="circle"></span>
+                </label>
+            </div>
+
+            <div class="input-container">
+                <p>Analytics & performance</p>
+                <label for="ana-pref" class="label checked">
+                    <input type="checkbox" name="preferences" id="ana-pref" class="input-checkbox changeable" checked>
+                    <span class="circle"></span>
+                </label>
+            </div>
+
+            <div class="input-container">
+                <p>Marketing</p>
+                <label for="marketing" class="label checked">
+                    <input type="checkbox" name="preferences" id="marketing" class="input-checkbox changeable" checked>
+                    <span class="circle"></span>
+                </label>
+            </div>
+        </form>
+        <button type="button" class="btn save-pref-btn" id="save-pref-btn">Save preferences</button>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
