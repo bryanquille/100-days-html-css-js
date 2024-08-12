@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .title-2 {
+        @apply mb-2 font-bold text-3xl text-MarineBlue;
+    }
+
+    .gray-text {
+        @apply text-CoolGray;
+    }
+
+    .gray-bold-text {
+        @apply font-semibold text-CoolGray;
+    }
+
+    .title-3 {
+        @apply font-semibold text-lg text-MarineBlue;
+    }
+
+    .bold-text {
+        @apply font-semibold text-MarineBlue;
+    }
+
+    .step-number {
+        @apply w-12 h-12 py-2 border-2 cursor-pointer border-LightBlue rounded-full text-center font-semibold text-lg text-white hover:bg-LightBlue hover:text-MarineBlue;
+    }
+
+    .label {
+        @apply w-full mb-1 block text-MarineBlue;
+    }
+
+    .input {
+        @apply w-full mb-4 px-4 py-3 border-2 border-LightGray rounded-md;
+    }
+
+    .plan-label {
+        @apply cursor-pointer mb-4 px-5 py-2 flex justify-start items-center gap-6 border-2 rounded-xl;
+    }
+
+    .plan-img {
+        @apply w-16;
+    }
+
+    .plan-input {
+        @apply absolute w-0 h-0 m-[-1px] p-0  border-0 overflow-hidden whitespace-nowrap;
+    }
+
+    .yearly-text {
+        @apply text-sm text-MarineBlue;
+    }
+
+    .checked-plan {
+        @apply border-PurplishBlue bg-Magnolia;
+    }
+
+    .ons-label {
+        @apply w-full mb-6 py-4 px-6 flex justify-between items-center gap-2 border-2 border-LightGray rounded-lg cursor-pointer;
+    }
+
+    .ons-input-container {
+        @apply flex justify-start items-center gap-6;
+    }
+
+    .ons-input {
+        @apply scale-150;
+    }
+
+    .ons-bold-text {
+        @apply font-semibold text-xl text-MarineBlue;
+    }
+
+    .ons-price {
+        @apply text-PurplishBlue;
+    }
+}
+
+.hid-yearly-text,
+.hid-monthly,
+.hid-yearly,
+.hid-btn,
+.hid-step {
+    display: none;
+}
+
+.show-btn,
+.show-monthly,
+.show-yearly {
+    display: unset;
+}
+
+.selected-step-number {
+    background-color: #bfe2fd;
+    color: #02295a;
+}
+
+.plan-input {
+    clip: rect(0, 0, 0, 0);
+}
+
+.monthly-circle {
+    margin-right: auto;
+}
+
+.yearly-circle {
+    margin-left: auto;
+}
+
+.selected-ons-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selected-ons-price {
+    font-weight: 500;
+    color: #02295a;
+}
