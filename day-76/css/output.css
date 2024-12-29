@@ -742,7 +742,7 @@ video {
 }
 
 .bg-pattern{
-  background-image: url('/assets/images/bg-intro-desktop.png');
+  background-image: url('../assets/images/bg-intro-desktop.png');
 }
 
 .bg-cover{
